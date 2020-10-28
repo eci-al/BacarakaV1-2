@@ -57,7 +57,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypi-uQ-fEx">
                                                         <rect key="frame" x="0.0" y="0.0" width="400" height="72"/>
                                                         <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="28"/>
-                                                        <state key="normal" title="Bab I Wulik"/>
+                                                        <state key="normal" title="Bab I Walik">
+                                                            <color key="titleColor" red="0.23840007190000001" green="0.13429507609999999" blue="0.082339726390000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
                                                         <connections>
                                                             <segue destination="BYZ-38-t0r" kind="show" id="g7K-bk-DCm"/>
                                                         </connections>
@@ -65,22 +67,30 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akX-ul-zMa">
                                                         <rect key="frame" x="0.0" y="72" width="400" height="71.5"/>
                                                         <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="28"/>
-                                                        <state key="normal" title="Bab II Wuwuhi"/>
+                                                        <state key="normal" title="Bab II Wuwuhi">
+                                                            <color key="titleColor" red="0.24231645460000001" green="0.1342442334" blue="0.086262159049999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJN-Zh-j8d">
                                                         <rect key="frame" x="0.0" y="143.5" width="400" height="72"/>
                                                         <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="28"/>
-                                                        <state key="normal" title="Bab III Kurang"/>
+                                                        <state key="normal" title="Bab III Kurang">
+                                                            <color key="titleColor" red="0.27748936410000002" green="0.15007156129999999" blue="0.094102598730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wq7-9y-Kgm">
                                                         <rect key="frame" x="0.0" y="215.5" width="400" height="71.5"/>
                                                         <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="28"/>
-                                                        <state key="normal" title="Bab IV Aksal"/>
+                                                        <state key="normal" title="Bab IV Aksal">
+                                                            <color key="titleColor" red="0.28531163929999998" green="0.16194832319999999" blue="0.0980226025" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8F-hK-2eO">
                                                         <rect key="frame" x="0.0" y="287" width="400" height="72"/>
                                                         <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="28"/>
-                                                        <state key="normal" title="Bab V Acak"/>
+                                                        <state key="normal" title="Bab V Acak">
+                                                            <color key="titleColor" red="0.23840007190000001" green="0.13429507609999999" blue="0.082339726390000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -105,11 +115,11 @@
                             <constraint firstItem="YJA-Z5-eh7" firstAttribute="trailing" secondItem="iUl-pU-auJ" secondAttribute="trailing" constant="150" id="2Fu-dS-2mh"/>
                             <constraint firstItem="iUl-pU-auJ" firstAttribute="top" secondItem="YJA-Z5-eh7" secondAttribute="top" constant="280" id="5T5-Uv-tsZ"/>
                             <constraint firstItem="58L-aF-gGn" firstAttribute="leading" secondItem="YJA-Z5-eh7" secondAttribute="leading" constant="250" id="8fJ-qC-sbo"/>
-                            <constraint firstItem="T4m-pK-hCx" firstAttribute="leading" secondItem="7I9-zj-5yc" secondAttribute="leading" id="Y2n-j1-feU"/>
-                            <constraint firstItem="T4m-pK-hCx" firstAttribute="top" secondItem="7I9-zj-5yc" secondAttribute="top" id="j6D-1v-IBV"/>
-                            <constraint firstAttribute="trailing" secondItem="T4m-pK-hCx" secondAttribute="trailing" id="jTp-f2-GE2"/>
+                            <constraint firstAttribute="bottom" secondItem="T4m-pK-hCx" secondAttribute="bottom" id="FXF-hL-490"/>
+                            <constraint firstItem="T4m-pK-hCx" firstAttribute="leading" secondItem="7I9-zj-5yc" secondAttribute="leading" id="LoI-1A-vdV"/>
                             <constraint firstItem="58L-aF-gGn" firstAttribute="top" secondItem="YJA-Z5-eh7" secondAttribute="top" constant="400" id="mLR-UU-NMw"/>
-                            <constraint firstAttribute="bottom" secondItem="T4m-pK-hCx" secondAttribute="bottom" id="pVt-kd-nLC"/>
+                            <constraint firstItem="T4m-pK-hCx" firstAttribute="top" secondItem="7I9-zj-5yc" secondAttribute="top" id="qyA-Eu-9s4"/>
+                            <constraint firstAttribute="trailing" secondItem="T4m-pK-hCx" secondAttribute="trailing" id="tP5-jY-4dX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0tN-fn-QfC"/>
@@ -130,7 +140,7 @@
                                 <rect key="frame" x="-1" y="0.0" width="1368" height="1024"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foH-qA-FKN">
-                                <rect key="frame" x="756" y="220" width="480" height="360"/>
+                                <rect key="frame" x="756" y="332" width="480" height="360"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xWI-4Y-HWk" userLabel="fullQuest">
                                         <rect key="frame" x="20" y="13" width="440" height="333"/>
@@ -272,7 +282,7 @@
                             <constraint firstItem="FRV-kf-u87" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-1" id="TkL-vm-kNl"/>
                             <constraint firstAttribute="bottom" secondItem="FRV-kf-u87" secondAttribute="bottom" id="WBu-QT-A6M"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1PH-VR-9TB" secondAttribute="trailing" constant="25" id="akg-1f-sLC"/>
-                            <constraint firstItem="foH-qA-FKN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="220" id="fA1-Kt-Uvg"/>
+                            <constraint firstItem="foH-qA-FKN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="etd-Oh-0RM"/>
                             <constraint firstItem="b5I-3b-6fi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="q7o-YK-96n"/>
                             <constraint firstItem="1PH-VR-9TB" firstAttribute="leading" secondItem="b5I-3b-6fi" secondAttribute="trailing" constant="860" id="tuG-eD-dAo"/>
                         </constraints>
