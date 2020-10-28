@@ -27,7 +27,15 @@ class ViewController: UIViewController {
     let origin: Double = 0
     let delta: Double = Double.pi/2
     let round: Double = 2 * Double.pi
+   
     
+    @IBOutlet weak var textLabel: UILabel!
+    
+    func showText(_ text: String){
+        self.textLabel?.text = text
+        
+    }
+        
     @IBOutlet weak var btn00: UIButton!
     @IBOutlet weak var btn01: UIButton!
     @IBOutlet weak var btn02: UIButton!
@@ -162,18 +170,21 @@ class ViewController: UIViewController {
                     // If there is one wrong, then it's false
                     status = false
                 }
+               
             }
         }
     
         //jika benar, panggil notifikasi
-        if status {
-            let alert = UIAlertController(title: "You Won!", message: "Congratulations 👍", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Next", style: UIAlertAction.Style.default, handler: { action -> Void in
-                 self.performSegue(withIdentifier: "win", sender: self)
-            }))
-            self.present(alert, animated: true, completion: nil)
+       if status {
+        self.showText("Ini adalah kisah tentang seorang pemuda sakti bernama Aji Saka. Ini adalah kisah tentang seorang pemuda sakti bernama Aji Saka. Ini adalah kisah tentang seorang pemuda sakti bernama Aji Saka. Ini adalah kisah tentang seorang pemuda sakti bernama Aji Saka")
+        
+           // let alert = UIAlertController(title: "You Won!", message: "Congratulations 👍", preferredStyle: .alert)
+            //alert.addAction(UIAlertAction(title: "Next", style: //UIAlertAction.Style.default, handler: { action -> Void in
+                // self.performSegue(withIdentifier: "win", sender: self)
         }
-    }
+            //self.present(alert, animated: true, completion: nil)
+        }
+    
     
     func rotate(view: UIView) {
         UIView.animate(withDuration: 0.05, animations: ({
@@ -181,4 +192,5 @@ class ViewController: UIViewController {
         }))
     }
     
+
 }

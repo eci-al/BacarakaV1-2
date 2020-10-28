@@ -270,6 +270,13 @@
                                     <segue destination="2mE-yH-tOV" kind="show" id="EuZ-TZ-0gu"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ta-aM-Eh4">
+                                <rect key="frame" x="162" y="633" width="490" height="252"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -301,11 +308,12 @@
                         <outlet property="btn21" destination="GV8-qu-uQ2" id="0s2-gp-a8E"/>
                         <outlet property="btn22" destination="ngv-Iq-3MK" id="1Q9-qf-8E3"/>
                         <outlet property="btn23" destination="ot0-vA-6NK" id="MRu-4e-lIr"/>
+                        <outlet property="textLabel" destination="9Ta-aM-Eh4" id="DgR-YN-fhH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-133" y="-35"/>
+            <point key="canvasLocation" x="-133.08931185944363" y="-35.15625"/>
         </scene>
     </scenes>
     <resources>
