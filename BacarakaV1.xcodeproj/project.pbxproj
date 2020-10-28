@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		311254542549CEB30089884E /* notKlik.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 311254532549CEB30089884E /* notKlik.mp3 */; };
 		3130E1DE2549900E00E175E4 /* klik.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3130E1DD2549900E00E175E4 /* klik.mp3 */; };
+		319446B2254A27500040FE76 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319446B0254A27500040FE76 /* FadeTransition.swift */; };
 		E23F530125488A9200451539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F530025488A9200451539 /* AppDelegate.swift */; };
 		E23F530325488A9200451539 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F530225488A9200451539 /* SceneDelegate.swift */; };
 		E23F530525488A9200451539 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F530425488A9200451539 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		311254532549CEB30089884E /* notKlik.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = notKlik.mp3; sourceTree = "<group>"; };
 		3130E1DD2549900E00E175E4 /* klik.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = klik.mp3; sourceTree = "<group>"; };
+		319446B0254A27500040FE76 /* FadeTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 		E23F52FD25488A9200451539 /* BacarakaV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BacarakaV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23F530025488A9200451539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E23F530225488A9200451539 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		E23F52FF25488A9200451539 /* BacarakaV1 */ = {
 			isa = PBXGroup;
 			children = (
+				319446B0254A27500040FE76 /* FadeTransition.swift */,
 				E23F530025488A9200451539 /* AppDelegate.swift */,
 				E23F530225488A9200451539 /* SceneDelegate.swift */,
 				E23F530425488A9200451539 /* ViewController.swift */,
@@ -165,6 +168,7 @@
 			files = (
 				E23F530525488A9200451539 /* ViewController.swift in Sources */,
 				E23F530125488A9200451539 /* AppDelegate.swift in Sources */,
+				319446B2254A27500040FE76 /* FadeTransition.swift in Sources */,
 				E23F530325488A9200451539 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
