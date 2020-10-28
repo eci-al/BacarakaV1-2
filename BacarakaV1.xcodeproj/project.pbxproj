@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3130E1DE2549900E00E175E4 /* klik.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3130E1DD2549900E00E175E4 /* klik.mp3 */; };
 		E23F530125488A9200451539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F530025488A9200451539 /* AppDelegate.swift */; };
 		E23F530325488A9200451539 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F530225488A9200451539 /* SceneDelegate.swift */; };
 		E23F530525488A9200451539 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F530425488A9200451539 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3130E1DD2549900E00E175E4 /* klik.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = klik.mp3; sourceTree = "<group>"; };
 		E23F52FD25488A9200451539 /* BacarakaV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BacarakaV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23F530025488A9200451539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E23F530225488A9200451539 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,9 +40,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3130E1D725498A4400E175E4 /* Sound Effect */ = {
+			isa = PBXGroup;
+			children = (
+				3130E1DD2549900E00E175E4 /* klik.mp3 */,
+			);
+			path = "Sound Effect";
+			sourceTree = "<group>";
+		};
 		E23F52F425488A9200451539 = {
 			isa = PBXGroup;
 			children = (
+				3130E1D725498A4400E175E4 /* Sound Effect */,
 				E23F52FF25488A9200451539 /* BacarakaV1 */,
 				E23F52FE25488A9200451539 /* Products */,
 			);
@@ -135,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E23F530D25488A9200451539 /* LaunchScreen.storyboard in Resources */,
+				3130E1DE2549900E00E175E4 /* klik.mp3 in Resources */,
 				E23F530A25488A9200451539 /* Assets.xcassets in Resources */,
 				E23F530825488A9200451539 /* Main.storyboard in Resources */,
 			);

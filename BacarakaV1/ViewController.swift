@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    
+    var sfx = AVAudioPlayer()
     
     // Set the different options of rotation
     var rotationOptions: Array = [0, Double.pi/2, Double.pi, 3*Double.pi/2]
@@ -57,6 +60,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        do {
+            sfx = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "klik", ofType: "mp3")!))
+        } catch {}
+        if sfx.isPlaying{
+            sfx.play()
+        }
         
         //deklarasi buttons, karena kita nggak buat di luar viewDidLoad (gak bisa di luar)
         let buttons: [[UIButton]] = [
@@ -109,10 +119,12 @@ class ViewController: UIViewController {
     @IBAction func btn02t(_ sender: Any) {
         rotateElement(row: 0, col: 2, sender: btn02)
         print("tapped!")
+        sfx.play()
     }
     
     @IBAction func btn03t(_ sender: Any) {
         rotateElement(row: 0, col: 3, sender: btn03)
+        sfx.play()
     }
     
     @IBAction func btn10t(_ sender: Any) {
@@ -120,31 +132,38 @@ class ViewController: UIViewController {
     
     @IBAction func btn11t(_ sender: Any) {
         rotateElement(row: 1, col: 1, sender: btn11)
+        sfx.play()
     }
     
     @IBAction func btn12t(_ sender: Any) {
         rotateElement(row: 1, col: 2, sender: btn12)
+        sfx.play()
     }
     
     @IBAction func btn13t(_ sender: Any) {
         rotateElement(row: 1, col: 3, sender: btn13)
+        sfx.play()
     }
         
         
     @IBAction func btn20t(_ sender: Any) {
         rotateElement(row: 2, col: 0, sender: btn20)
+        sfx.play()
     }
         
     @IBAction func btn21t(_ sender: Any) {
         rotateElement(row: 2, col: 1, sender: btn21)
+        sfx.play()
     }
         
     @IBAction func btn22t(_ sender: Any) {
         rotateElement(row: 2, col: 2, sender: btn22)
+        sfx.play()
     }
         
     @IBAction func btn23t(_ sender: Any) {
         rotateElement(row: 2, col: 3, sender: btn23)
+        sfx.play()
     }
     
     //kita ulang (for) sebanyak maxRow yg udah kita deklarasi di atas (baris 67). stelah itu kita buat randomAngle untuk ambil nilai antara 0, Double.pi/2, Double.pi, 3*Double.pi/2
