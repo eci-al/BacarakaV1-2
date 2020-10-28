@@ -11,6 +11,7 @@ import AVFoundation
 class ViewController: UIViewController {
     
     var sfx = AVAudioPlayer()
+    var falseSfx = AVAudioPlayer()
     
     // Set the different options of rotation
     var rotationOptions: Array = [0, Double.pi/2, Double.pi, 3*Double.pi/2]
@@ -65,8 +66,13 @@ class ViewController: UIViewController {
             sfx = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "klik", ofType: "mp3")!))
         } catch {}
         if sfx.isPlaying{
-            sfx.play()
-        }
+            sfx.play()}
+            do {
+                falseSfx = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "notKlik", ofType: "mp3")!))
+            } catch {}
+            
+        
+        
         
         //deklarasi buttons, karena kita nggak buat di luar viewDidLoad (gak bisa di luar)
         let buttons: [[UIButton]] = [
@@ -109,11 +115,13 @@ class ViewController: UIViewController {
    
     
     @IBAction func btn00t(_ sender: Any) {
+        falseSfx.play()
         //ngga dimasukin command apapun supaya dia tidak ikut ter-randomize
        
     }
     
     @IBAction func btn01t(_ sender: Any) {
+        falseSfx.play()
     }
     
     @IBAction func btn02t(_ sender: Any) {
@@ -128,6 +136,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func btn10t(_ sender: Any) {
+        falseSfx.play()
     }
     
     @IBAction func btn11t(_ sender: Any) {
@@ -193,7 +202,7 @@ class ViewController: UIViewController {
             }
         }
     
-        //jika benar, panggil notifikasi
+        //jika benar, panggil sesuatu
        if status {
         self.showText("Ini adalah kisah tentang seorang pemuda sakti bernama Aji Saka. Ini adalah kisah tentang seorang pemuda sakti bernama Aji Saka. Ini adalah kisah tentang seorang pemuda sakti bernama Aji Saka. Ini adalah kisah tentang seorang pemuda sakti bernama Aji Saka")
         

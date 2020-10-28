@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		311254542549CEB30089884E /* notKlik.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 311254532549CEB30089884E /* notKlik.mp3 */; };
 		3130E1DE2549900E00E175E4 /* klik.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3130E1DD2549900E00E175E4 /* klik.mp3 */; };
 		E23F530125488A9200451539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F530025488A9200451539 /* AppDelegate.swift */; };
 		E23F530325488A9200451539 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F530225488A9200451539 /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		311254532549CEB30089884E /* notKlik.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = notKlik.mp3; sourceTree = "<group>"; };
 		3130E1DD2549900E00E175E4 /* klik.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = klik.mp3; sourceTree = "<group>"; };
 		E23F52FD25488A9200451539 /* BacarakaV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BacarakaV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23F530025488A9200451539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				3130E1DD2549900E00E175E4 /* klik.mp3 */,
+				311254532549CEB30089884E /* notKlik.mp3 */,
 			);
 			path = "Sound Effect";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				311254542549CEB30089884E /* notKlik.mp3 in Resources */,
 				E23F530D25488A9200451539 /* LaunchScreen.storyboard in Resources */,
 				3130E1DE2549900E00E175E4 /* klik.mp3 in Resources */,
 				E23F530A25488A9200451539 /* Assets.xcassets in Resources */,
