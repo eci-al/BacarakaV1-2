@@ -36,10 +36,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var textLabel: UILabel!
     
+    
+    
+//    var cerita:[String] = ["Alkisah ada seorang pemuda sakti yang bernama Ajisaka.", "Ajisaka memiliki dua orang abdi yang sangat setia bernama Dora dan Sembada.", "Suatu ketika, Ajisaka pergi mengembara ke Kerajaan Medhangkamulan dan mengajak Dora untuk menemaninya."]
+//
+    
     func showText(_ text: String){
         self.textLabel?.text = text
-        
+
     }
+//
     
     
     @IBOutlet var allButtons: [UIButton]!

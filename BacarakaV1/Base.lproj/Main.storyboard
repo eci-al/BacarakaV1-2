@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2mE-yH-tOV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nw0-sy-7zm">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -127,6 +127,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4I3-Wa-J8l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-945" y="-35"/>
+        </scene>
+        <!--Tebak Aksara-->
+        <scene sceneID="uPo-Qu-zKe">
+            <objects>
+                <viewController id="nw0-sy-7zm" customClass="TebakAksara" customModule="BacarakaV1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ikg-27-6wU">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HalamanUtama" translatesAutoresizingMaskIntoConstraints="NO" id="5HA-sZ-clc">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2" translatesAutoresizingMaskIntoConstraints="NO" id="8jL-gn-liU">
+                                <rect key="frame" x="200" y="250" width="281" height="217"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="217" id="bZe-jP-6SD"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="H4I-6N-SUC" userLabel="KartuSuaraSV">
+                                <rect key="frame" x="90" y="612" width="556" height="217"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KartuSuara" translatesAutoresizingMaskIntoConstraints="NO" id="0Yy-xx-7DS">
+                                        <rect key="frame" x="0.0" y="0.0" width="268" height="217"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KartuSuara" translatesAutoresizingMaskIntoConstraints="NO" id="aXq-E4-HZb">
+                                        <rect key="frame" x="288" y="0.0" width="268" height="217"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="217" id="7r3-UL-2hr"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2G0-wE-m56"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8jL-gn-liU" firstAttribute="leading" secondItem="2G0-wE-m56" secondAttribute="leading" constant="200" id="FWL-o3-84c"/>
+                            <constraint firstItem="2G0-wE-m56" firstAttribute="trailing" secondItem="H4I-6N-SUC" secondAttribute="trailing" constant="720" id="IRc-vJ-liN"/>
+                            <constraint firstItem="H4I-6N-SUC" firstAttribute="top" secondItem="8jL-gn-liU" secondAttribute="bottom" constant="145" id="JZZ-Zv-0Vl"/>
+                            <constraint firstItem="2G0-wE-m56" firstAttribute="trailing" secondItem="8jL-gn-liU" secondAttribute="trailing" constant="885" id="NQi-aU-OaQ"/>
+                            <constraint firstItem="5HA-sZ-clc" firstAttribute="top" secondItem="Ikg-27-6wU" secondAttribute="top" id="SbW-nQ-gAU"/>
+                            <constraint firstItem="H4I-6N-SUC" firstAttribute="leading" secondItem="2G0-wE-m56" secondAttribute="leading" constant="90" id="czJ-tf-VrZ"/>
+                            <constraint firstAttribute="bottom" secondItem="5HA-sZ-clc" secondAttribute="bottom" id="iSd-Fa-KCo"/>
+                            <constraint firstItem="5HA-sZ-clc" firstAttribute="leading" secondItem="Ikg-27-6wU" secondAttribute="leading" id="iWn-rc-Mog"/>
+                            <constraint firstAttribute="trailing" secondItem="5HA-sZ-clc" secondAttribute="trailing" id="pMJ-MY-HO2"/>
+                            <constraint firstItem="8jL-gn-liU" firstAttribute="top" secondItem="2G0-wE-m56" secondAttribute="top" constant="250" id="z2e-8m-vej"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="KartuAksara" destination="8jL-gn-liU" id="6oG-Rh-bYv"/>
+                        <outlet property="suaraAksaraBenar" destination="0Yy-xx-7DS" id="7zb-iG-Z04"/>
+                        <outlet property="suaraAksaraSalah" destination="aXq-E4-HZb" id="rbn-Jc-b7y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pdf-g2-xjt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-951.39092240117122" y="679.6875"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -256,6 +313,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PH-VR-9TB" userLabel="gulunganKertas">
                                 <rect key="frame" x="1103" y="20" width="218" height="130"/>
                                 <state key="normal" backgroundImage="gulungan"/>
+                                <connections>
+                                    <segue destination="bj6-9c-FoT" kind="show" id="egi-cg-Q5H"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5I-3b-6fi">
                                 <rect key="frame" x="145" y="50" width="98" height="55"/>
@@ -331,10 +391,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-133.08931185944363" y="-35.15625"/>
+            <point key="canvasLocation" x="-241" y="-46"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ERi-fC-t0P">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="bj6-9c-FoT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="COU-Qk-aDJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bsckground" translatesAutoresizingMaskIntoConstraints="NO" id="4yK-uW-tQi">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scroll open landscape with aksara" translatesAutoresizingMaskIntoConstraints="NO" id="apn-oG-KwC">
+                                <rect key="frame" x="20" y="20" width="1326" height="964"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KT9-Jq-OR8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KT9-Jq-OR8" firstAttribute="bottom" secondItem="apn-oG-KwC" secondAttribute="bottom" constant="20" id="1qv-dz-1Ku"/>
+                            <constraint firstItem="KT9-Jq-OR8" firstAttribute="trailing" secondItem="apn-oG-KwC" secondAttribute="trailing" constant="20" id="AA9-F3-GwD"/>
+                            <constraint firstAttribute="bottom" secondItem="4yK-uW-tQi" secondAttribute="bottom" id="GcX-Jg-VC3"/>
+                            <constraint firstItem="4yK-uW-tQi" firstAttribute="top" secondItem="COU-Qk-aDJ" secondAttribute="top" id="NHy-Kr-frY"/>
+                            <constraint firstItem="4yK-uW-tQi" firstAttribute="leading" secondItem="COU-Qk-aDJ" secondAttribute="leading" id="VAk-Br-eQz"/>
+                            <constraint firstItem="apn-oG-KwC" firstAttribute="top" secondItem="KT9-Jq-OR8" secondAttribute="top" constant="20" id="c9O-Fe-q5Q"/>
+                            <constraint firstAttribute="trailing" secondItem="4yK-uW-tQi" secondAttribute="trailing" id="eh2-9U-FWW"/>
+                            <constraint firstItem="apn-oG-KwC" firstAttribute="leading" secondItem="KT9-Jq-OR8" secondAttribute="leading" constant="20" id="xeR-G1-8XZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fja-rT-Z8e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8mT-PV-z6a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="-14"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="g7K-bk-DCm"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="Group 2" width="225" height="225"/>
         <image name="Ha1" width="109" height="110"/>
         <image name="Ha10" width="110" height="110"/>
         <image name="Ha11" width="110" height="109"/>
@@ -348,7 +446,10 @@
         <image name="Ha8" width="110" height="109"/>
         <image name="Ha9" width="110" height="109"/>
         <image name="HalamanUtama" width="1080" height="810"/>
+        <image name="KartuSuara" width="212" height="131"/>
+        <image name="Scroll open landscape with aksara" width="1025" height="699"/>
         <image name="backgroundBab1" width="1088" height="816"/>
+        <image name="bsckground" width="1088" height="816"/>
         <image name="gulungan" width="218" height="130"/>
         <image name="resetButton" width="123" height="98"/>
         <image name="soundButton" width="151" height="121"/>
