@@ -10,6 +10,7 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
+    //sound effect
     var sfx = AVAudioPlayer()
     var falseSfx = AVAudioPlayer()
     
@@ -53,8 +54,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var btn22: UIButton!
     @IBOutlet weak var btn23: UIButton!
     
-    /* var a = 5
-    a =10 */
+   
    
     
     
@@ -70,10 +70,8 @@ class ViewController: UIViewController {
             do {
                 falseSfx = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "notKlik", ofType: "mp3")!))
             } catch {}
-            
         
-        
-        
+      
         //deklarasi buttons, karena kita nggak buat di luar viewDidLoad (gak bisa di luar)
         let buttons: [[UIButton]] = [
             [btn00,btn01,btn02,btn03],
@@ -186,6 +184,7 @@ class ViewController: UIViewController {
             }
         }
     }
+    
     
     //untuk memastikan puzzle sudah benar :*
     func verifyGoal() {
