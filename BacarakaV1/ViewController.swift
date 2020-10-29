@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     var sfx = AVAudioPlayer()
     var falseSfx = AVAudioPlayer()
     
+    
+    
+    
+    
     // Set the different options of rotation
     var rotationOptions: Array = [0, Double.pi/2, Double.pi, 3*Double.pi/2]
     
@@ -102,6 +106,7 @@ class ViewController: UIViewController {
                 buttons[r][c].imageView?.transform = CGAffineTransform(rotationAngle: CGFloat(matrix[r][c]))
             }
         }
+        
         
     }
     
@@ -208,6 +213,13 @@ class ViewController: UIViewController {
        if status {
         textLabel.fadeTransition(1.0)
         self.showText("Alkisah ada seorang pemuda sakti yang bernama Ajisaka. Ajisaka memiliki dua orang abdi yang sangat setia bernama Dora dan Sembada. Suatu ketika, Ajisaka pergi mengembara ke Kerajaan Medhangkamulan dan mengajak Dora untuk menemaninya. ")
+        let labelpuz = 3
+        switch labelpuz {
+        case 0:
+            <#code#>
+        default:
+            <#code#>
+        }
         allButtons[0].isEnabled = false
         allButtons[1].isEnabled = false
         allButtons[2].isEnabled = false
@@ -221,6 +233,45 @@ class ViewController: UIViewController {
         allButtons[10].isEnabled = false
         allButtons[11].isEnabled = false
         
+        //let view = UIView()
+        view.backgroundColor = .clear
+        
+        let image = UIImage(named: "gulunganreward")
+        
+        let imageView: UIImageView = UIImageView()
+        imageView.contentMode = UIView.ContentMode.scaleAspectFit
+        imageView.frame.size.width = 800
+        imageView.frame.size.height = 1500
+        imageView.center = self.view.center
+        
+        imageView.image = image
+        view.addSubview(imageView)
+        //self.view = view
+        
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 500, height: 700))
+        label.center = CGPoint(x: 680, y: 450)
+        label.lineBreakMode = NSLineBreakMode.byWordWrapping
+        label.numberOfLines = 3
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 44)
+        label.text = "Selamat!!! \n Kamu telah menyusun \n satu aksara"
+        self.view.addSubview(label)
+        
+        UIView.animate(withDuration: 5.0,
+                        animations: {
+                            imageView.alpha = 0.0
+                            label.alpha = 0.0
+                        },
+                        completion:{_ in imageView.removeFromSuperview()
+                    })
+        
+            let imageButton = UIImage(named: "next") as UIImage?
+            let button   = UIButton(type: UIButton.ButtonType.custom) as UIButton
+            button.frame = CGRect(x: 1200, y: 825, width: 150, height: 150)
+            button.setImage(imageButton, for: .normal)
+            button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+            self.view.addSubview(button)
+
         
            // let alert = UIAlertController(title: "You Won!", message: "Congratulations 👍", preferredStyle: .alert)
             //alert.addAction(UIAlertAction(title: "Next", style: //UIAlertAction.Style.default, handler: { action -> Void in
@@ -229,6 +280,12 @@ class ViewController: UIViewController {
             //self.present(alert, animated: true, completion: nil)
         }
     
+    @objc private func didTapButton() {
+        let vc = AnnotateViewController()
+        self.performSegue(withIdentifier: "AnnotateViewController", sender: self)
+        vc.modalTransitionStyle = .crossDissolve
+        present(vc, animated: true)
+    }
     
     func rotate(view: UIView) {
         UIView.animate(withDuration: 0.05, animations: ({
