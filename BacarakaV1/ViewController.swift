@@ -40,7 +40,9 @@ class ViewController: UIViewController {
         self.textLabel?.text = text
         
     }
-        
+    
+    
+    @IBOutlet var allButtons: [UIButton]!
     @IBOutlet weak var btn00: UIButton!
     @IBOutlet weak var btn01: UIButton!
     @IBOutlet weak var btn02: UIButton!
@@ -205,6 +207,19 @@ class ViewController: UIViewController {
        if status {
         textLabel.fadeTransition(1.0)
         self.showText("Alkisah ada seorang pemuda sakti yang bernama Ajisaka. Ajisaka memiliki dua orang abdi yang sangat setia bernama Dora dan Sembada. Suatu ketika, Ajisaka pergi mengembara ke Kerajaan Medhangkamulan dan mengajak Dora untuk menemaninya. ")
+        allButtons[0].isEnabled = false
+        allButtons[1].isEnabled = false
+        allButtons[2].isEnabled = false
+        allButtons[3].isEnabled = false
+        allButtons[4].isEnabled = false
+        allButtons[5].isEnabled = false
+        allButtons[6].isEnabled = false
+        allButtons[7].isEnabled = false
+        allButtons[8].isEnabled = false
+        allButtons[9].isEnabled = false
+        allButtons[10].isEnabled = false
+        allButtons[11].isEnabled = false
+        
         
            // let alert = UIAlertController(title: "You Won!", message: "Congratulations 👍", preferredStyle: .alert)
             //alert.addAction(UIAlertAction(title: "Next", style: //UIAlertAction.Style.default, handler: { action -> Void in
