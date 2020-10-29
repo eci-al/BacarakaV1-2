@@ -213,13 +213,6 @@ class ViewController: UIViewController {
        if status {
         textLabel.fadeTransition(1.0)
         self.showText("Alkisah ada seorang pemuda sakti yang bernama Ajisaka. Ajisaka memiliki dua orang abdi yang sangat setia bernama Dora dan Sembada. Suatu ketika, Ajisaka pergi mengembara ke Kerajaan Medhangkamulan dan mengajak Dora untuk menemaninya. ")
-        let labelpuz = 3
-        switch labelpuz {
-        case 0:
-            <#code#>
-        default:
-            <#code#>
-        }
         allButtons[0].isEnabled = false
         allButtons[1].isEnabled = false
         allButtons[2].isEnabled = false
