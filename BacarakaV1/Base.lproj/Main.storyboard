@@ -456,9 +456,6 @@
             <point key="canvasLocation" x="633" y="-35"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="g7K-bk-DCm"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Group 2" width="225" height="225"/>
         <image name="Ha1" width="109" height="110"/>
