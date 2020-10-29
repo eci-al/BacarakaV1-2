@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     //sound effect
     var sfx = AVAudioPlayer()
     var falseSfx = AVAudioPlayer()
+    var suaraCerita1 = AVAudioPlayer()
+    var suaraCerita2 = AVAudioPlayer()
+    var suaraCerita3 = AVAudioPlayer()
     
     // Set the different options of rotation
     var rotationOptions: Array = [0, Double.pi/2, Double.pi, 3*Double.pi/2]
@@ -27,6 +30,7 @@ class ViewController: UIViewController {
     //if logic
     let cerita = ["Alkisah ada seorang pemuda sakti yang bernama Ajisaka. ", "Ajisaka memiliki dua orang abdi yang sangat setia bernama Dora dan Sembada. ", "Suatu ketika, Ajisaka pergi mengembara ke Kerajaan Medhangkamulan dan mengajak Dora untuk menemaninya."]
     var i = 0
+    var o = 1
     var m0 = false
     var m1 = false
     var m2 = false
@@ -69,12 +73,23 @@ class ViewController: UIViewController {
         
         do {
             sfx = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "klik", ofType: "mp3")!))
-        } catch {}
-        if sfx.isPlaying{
-            sfx.play()}
-            do {
-                falseSfx = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "notKlik", ofType: "mp3")!))
-            } catch {}
+        } catch {
+            print(error)
+        }
+        
+//        if sfx.isPlaying{
+//            sfx.play()
+//        }
+        
+        do {
+            falseSfx = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "notKlik", ofType: "mp3")!))
+        } catch {
+            print(error)
+        }
+        
+        
+        suaraa()
+        pemanggilSuaraa()
         
         //deklarasi buttons, karena kita nggak buat di luar viewDidLoad (gak bisa di luar)
         let buttons: [[UIButton]] = [
@@ -265,6 +280,8 @@ class ViewController: UIViewController {
             if matrix[0] == [0,0,0,0] {
                 textLabel.text?.append(cerita[i])
                 i += 1
+                pemanggilSuaraa()
+                o += 1
                 m0 = true
             }
         }
@@ -273,6 +290,8 @@ class ViewController: UIViewController {
             if matrix[1] == [0,0,0,0] {
                 textLabel.text?.append(cerita[i])
                 i += 1
+                pemanggilSuaraa()
+                o += 1
                 m1 = true
             }
         }
@@ -281,6 +300,8 @@ class ViewController: UIViewController {
             if matrix[2] == [0,0,0,0] {
                 textLabel.text?.append(cerita[i])
                 i += 1
+                pemanggilSuaraa()
+                o += 1
                 m2 = true
             }
         }
@@ -290,5 +311,44 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.05, animations: ({
             view.transform = view.transform.rotated(by: CGFloat(Double.pi/2))
         }))
+    }
+    
+    func pemanggilSuaraa() {
+        if i == 0 {
+            suaraCerita1.play()
+        }
+        if i == 1 {
+            suaraCerita2.play()
+        }
+        if i == 2 {
+            suaraCerita3.play()
+        }
+    }
+    
+    func suaraa() {
+        
+        if i == 0 {
+            do {
+                suaraCerita1 = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "bacaCerita1", ofType: "mp3")!))
+            } catch {
+                print(error)
+            }
+        }
+        
+        if i == 1 {
+            do {
+                suaraCerita2 = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "bacaCerita2", ofType: "mp3")!))
+            } catch {
+                print(error)
+            }
+        }
+        
+        if i == 2 {
+            do {
+                suaraCerita3 = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "bacaCerita3", ofType: "mp3")!))
+            } catch {
+                print(error)
+            }
+        }
     }
 }
