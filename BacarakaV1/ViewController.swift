@@ -204,7 +204,7 @@ class ViewController: UIViewController {
     
         //jika benar, panggil sesuatu
        if status {
-        self.showText("Ini adalah kisah tentang seorang pemuda sakti bernama Aji Saka. Ini adalah kisah tentang seorang pemuda sakti bernama Aji Saka. Ini adalah kisah tentang seorang pemuda sakti bernama Aji Saka. Ini adalah kisah tentang seorang pemuda sakti bernama Aji Saka")
+        self.showText("Alkisah ada seorang pemuda sakti yang bernama Ajisaka. Ajisaka memiliki dua orang abdi yang sangat setia bernama Dora dan Sembada. Suatu ketika, Ajisaka pergi mengembara ke Kerajaan Medhangkamulan dan mengajak Dora untuk menemaninya. ")
         
            // let alert = UIAlertController(title: "You Won!", message: "Congratulations 👍", preferredStyle: .alert)
             //alert.addAction(UIAlertAction(title: "Next", style: //UIAlertAction.Style.default, handler: { action -> Void in

@@ -270,11 +270,14 @@
                                     <segue destination="2mE-yH-tOV" kind="show" id="EuZ-TZ-0gu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ta-aM-Eh4">
-                                <rect key="frame" x="162" y="633" width="490" height="252"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="22"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ta-aM-Eh4">
+                                <rect key="frame" x="120" y="635" width="500" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="1Od-Ro-3c5"/>
+                                    <constraint firstAttribute="height" constant="300" id="o5u-zF-CTC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="22"/>
+                                <color key="textColor" red="0.19579776409999999" green="0.077041721369999996" blue="0.051228600839999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -284,12 +287,15 @@
                             <constraint firstItem="1PH-VR-9TB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="5so-pL-zz6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="foH-qA-FKN" secondAttribute="trailing" constant="130" id="8vn-Cy-YVa"/>
                             <constraint firstItem="b5I-3b-6fi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="DfW-1O-eCL"/>
+                            <constraint firstItem="foH-qA-FKN" firstAttribute="leading" secondItem="9Ta-aM-Eh4" secondAttribute="trailing" constant="136" id="Edk-QA-9nm"/>
+                            <constraint firstItem="9Ta-aM-Eh4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="G5n-mk-xTS"/>
                             <constraint firstAttribute="trailing" secondItem="FRV-kf-u87" secondAttribute="trailing" constant="-1" id="Kn7-ZQ-N6h"/>
                             <constraint firstItem="FRV-kf-u87" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PGV-vA-8Ih"/>
                             <constraint firstItem="FRV-kf-u87" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-1" id="TkL-vm-kNl"/>
                             <constraint firstAttribute="bottom" secondItem="FRV-kf-u87" secondAttribute="bottom" id="WBu-QT-A6M"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1PH-VR-9TB" secondAttribute="trailing" constant="25" id="akg-1f-sLC"/>
                             <constraint firstItem="foH-qA-FKN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="etd-Oh-0RM"/>
+                            <constraint firstItem="9Ta-aM-Eh4" firstAttribute="top" secondItem="b5I-3b-6fi" secondAttribute="bottom" constant="530" id="kdM-Pt-FYk"/>
                             <constraint firstItem="b5I-3b-6fi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="q7o-YK-96n"/>
                             <constraint firstItem="1PH-VR-9TB" firstAttribute="leading" secondItem="b5I-3b-6fi" secondAttribute="trailing" constant="860" id="tuG-eD-dAo"/>
                         </constraints>
