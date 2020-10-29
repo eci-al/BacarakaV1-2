@@ -80,6 +80,7 @@
 				E23F530225488A9200451539 /* SceneDelegate.swift */,
 				E21DC88B254B376D00D5B43E /* TebakAksara.swift */,
 				E23F530425488A9200451539 /* ViewController.swift */,
+				492BC5B1254A8BC4004B53D3 /* AnnotateViewController.swift */,
 				E23F530625488A9200451539 /* Main.storyboard */,
 				E23F530925488A9200451539 /* Assets.xcassets */,
 				E23F530B25488A9200451539 /* LaunchScreen.storyboard */,
