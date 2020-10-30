@@ -30,7 +30,6 @@ class ViewController: UIViewController {
     //if logic
     let cerita = ["Alkisah ada seorang pemuda sakti yang bernama Ajisaka. ", "Ajisaka memiliki dua orang abdi yang sangat setia bernama Dora dan Sembada. ", "Suatu ketika, Ajisaka pergi mengembara ke Kerajaan Medhangkamulan dan mengajak Dora untuk menemaninya."]
     var i = 0
-    var o = 1
     var m0 = false
     var m1 = false
     var m2 = false
@@ -45,9 +44,6 @@ class ViewController: UIViewController {
     let round: Double = 2 * Double.pi
    
     @IBOutlet weak var textLabel: UILabel!
-    
-//    var cerita:[String] = ["Alkisah ada seorang pemuda sakti yang bernama Ajisaka.", "Ajisaka memiliki dua orang abdi yang sangat setia bernama Dora dan Sembada.", "Suatu ketika, Ajisaka pergi mengembara ke Kerajaan Medhangkamulan dan mengajak Dora untuk menemaninya."]
-//
     
     func showText(_ text: String){
         self.textLabel?.text = text
@@ -71,25 +67,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        do {
-            sfx = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "klik", ofType: "mp3")!))
-        } catch {
-            print(error)
-        }
-        
-//        if sfx.isPlaying{
-//            sfx.play()
-//        }
-        
-        do {
-            falseSfx = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "notKlik", ofType: "mp3")!))
-        } catch {
-            print(error)
-        }
-        
-        
-        suaraa()
-        pemanggilSuaraa()
         
         //deklarasi buttons, karena kita nggak buat di luar viewDidLoad (gak bisa di luar)
         let buttons: [[UIButton]] = [
@@ -103,6 +80,7 @@ class ViewController: UIViewController {
         maxCol = matrix[0].count-1
         
         randomizeMatrix()
+        sound()
         
         //kita deklarasi ulang matriks baris 1 kolom ke nilai 0 karena kita mau lock dia supaya gk gerak
         matrix[0][0] = 0
@@ -128,7 +106,7 @@ class ViewController: UIViewController {
     
     @IBAction func btn00t(_ sender: Any) {
         falseSfx.play()
-        //ngga dimasukin command apapun supaya dia tidak ikut ter-randomize
+        //ngga dimasukin command apapun sup`aya dia tidak ikut ter-randomize
     }
     
     @IBAction func btn01t(_ sender: Any) {
@@ -204,7 +182,7 @@ class ViewController: UIViewController {
         updateText()
     
         //jika benar, panggil sesuatu
-       if status {
+        if status {
 
         allButtons[0].isEnabled = false
         allButtons[1].isEnabled = false
@@ -279,9 +257,8 @@ class ViewController: UIViewController {
         if m0 == false {
             if matrix[0] == [0,0,0,0] {
                 textLabel.text?.append(cerita[i])
+                suaraCeritaa()
                 i += 1
-                pemanggilSuaraa()
-                o += 1
                 m0 = true
             }
         }
@@ -289,9 +266,8 @@ class ViewController: UIViewController {
         if m1 == false {
             if matrix[1] == [0,0,0,0] {
                 textLabel.text?.append(cerita[i])
+                suaraCeritaa()
                 i += 1
-                pemanggilSuaraa()
-                o += 1
                 m1 = true
             }
         }
@@ -299,11 +275,53 @@ class ViewController: UIViewController {
         if m2 == false {
             if matrix[2] == [0,0,0,0] {
                 textLabel.text?.append(cerita[i])
+                suaraCeritaa()
                 i += 1
-                pemanggilSuaraa()
-                o += 1
                 m2 = true
             }
+        }
+    }
+    
+    func suaraCeritaa() {
+        if i == 0 {
+            suaraCerita1.play()
+        } else if i == 1 {
+            suaraCerita2.play()
+        } else {
+            suaraCerita3.play()
+        }
+    }
+    
+    func sound() {
+        do {
+            sfx = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "klik", ofType: "mp3")!))
+        } catch {
+            print(error)
+        }
+        
+        do {
+            falseSfx = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "notKlik", ofType: "mp3")!))
+        } catch {
+            print(error)
+        }
+        
+        //ganti suara sesuai cerita
+        do {
+            suaraCerita1 = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "bacaCerita1", ofType: "mp3")!))
+        } catch {
+            print(error)
+        }
+    
+        do {
+            suaraCerita2 = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "bacaCerita2", ofType: "mp3")!))
+        } catch {
+            print(error)
+        }
+        
+        do {
+            suaraCerita3 = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "bacaCerita3", ofType: "mp3")!))
+        } catch {
+            print(error)
         }
     }
     
@@ -311,44 +329,5 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.05, animations: ({
             view.transform = view.transform.rotated(by: CGFloat(Double.pi/2))
         }))
-    }
-    
-    func pemanggilSuaraa() {
-        if i == 0 {
-            suaraCerita1.play()
-        }
-        if i == 1 {
-            suaraCerita2.play()
-        }
-        if i == 2 {
-            suaraCerita3.play()
-        }
-    }
-    
-    func suaraa() {
-        
-        if i == 0 {
-            do {
-                suaraCerita1 = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "bacaCerita1", ofType: "mp3")!))
-            } catch {
-                print(error)
-            }
-        }
-        
-        if i == 1 {
-            do {
-                suaraCerita2 = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "bacaCerita2", ofType: "mp3")!))
-            } catch {
-                print(error)
-            }
-        }
-        
-        if i == 2 {
-            do {
-                suaraCerita3 = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "bacaCerita3", ofType: "mp3")!))
-            } catch {
-                print(error)
-            }
-        }
     }
 }

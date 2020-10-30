@@ -31,7 +31,6 @@
 		A94C2AB1254AD644002130D9 /* bacaCerita1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bacaCerita1.mp3; sourceTree = "<group>"; };
 		A94C2AB4254AD6E2002130D9 /* bacaCerita2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bacaCerita2.mp3; sourceTree = "<group>"; };
 		A94C2AB5254AD6E2002130D9 /* bacaCerita3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bacaCerita3.mp3; sourceTree = "<group>"; };
-		A996016B254B15D700F18362 /* BacarakaV1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BacarakaV1.entitlements; sourceTree = "<group>"; };
 		E21DC88B254B376D00D5B43E /* TebakAksara.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TebakAksara.swift; sourceTree = "<group>"; };
 		E23F52FD25488A9200451539 /* BacarakaV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BacarakaV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23F530025488A9200451539 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,7 +86,6 @@
 		E23F52FF25488A9200451539 /* BacarakaV1 */ = {
 			isa = PBXGroup;
 			children = (
-				A996016B254B15D700F18362 /* BacarakaV1.entitlements */,
 				319446B0254A27500040FE76 /* FadeTransition.swift */,
 				E23F530025488A9200451539 /* AppDelegate.swift */,
 				E23F530225488A9200451539 /* SceneDelegate.swift */,

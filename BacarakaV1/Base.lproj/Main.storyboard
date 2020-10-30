@@ -186,6 +186,21 @@
             <point key="canvasLocation" x="-951.39092240117122" y="679.6875"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="eYb-Jn-k5U">
+            <objects>
+                <viewController id="rRN-IZ-MLP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Kf-Vu-eFh">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="z7c-dr-svp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qN-sj-zVC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42" y="-764"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="BacarakaV1" customModuleProvider="target" sceneMemberID="viewController">
