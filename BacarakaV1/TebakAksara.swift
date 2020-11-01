@@ -13,42 +13,55 @@ class TebakAksara: UIViewController {
     @IBOutlet weak var suaraAksaraBenar: UIImageView!
     @IBOutlet weak var suaraAksaraSalah: UIImageView!
     
-    var fileViewOrigin:CGPoint!
+    var KartuAksaraOrigin:CGPoint!
     
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
         addPanGesture(view: KartuAksara)
-        fileViewOrigin = KartuAksara.frame.origin
+        KartuAksaraOrigin = KartuAksara.frame.origin
+        view.bringSubviewToFront(KartuAksara)
     }
+    
     func addPanGesture(view:UIView) {
         
         let pan = UIPanGestureRecognizer(target: self, action: #selector (TebakAksara.handlePan(sender:)))
         view.addGestureRecognizer(pan)
-        
     }
+    
+    // Refactor
     @objc func handlePan(sender: UIPanGestureRecognizer) {
         let fileView = sender.view!
-        let translation = sender.translation(in: view)
-        
-        
         switch sender.state {
         case .began, .changed:
-            fileView.center = CGPoint (x: fileView.center.x + translation.x, y: fileView.center.y + translation.y)
-            sender.setTranslation(CGPoint.zero, in: view)
-                
-    
+            moveViewWithPan(view: fileView, sender: sender)
         case .ended:
-            break
+            if fileView.frame.intersects(suaraAksaraBenar.frame) {
+                deleteView(view: fileView)
+            } else {
+                returnViewToOrigin(view: fileView)
+            }
             
         default:
             break
         }
-        
     }
     
-
+    func moveViewWithPan(view: UIView, sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: view)
+        view.center = CGPoint(x: view.center.x + translation.x, y: view.center.y + translation.y)
+        sender.setTranslation(CGPoint.zero, in: view)
+    }
+    
+    func returnViewToOrigin(view: UIView) {
+        UIView.animate(withDuration: 0.3, animations: {
+            view.frame.origin = self.KartuAksaraOrigin
+        })
+    }
+    
+    func deleteView(view: UIView) {
+        UIView.animate(withDuration: 0.3, animations: {
+            view.alpha = 0.0
+        })
+    }
 }

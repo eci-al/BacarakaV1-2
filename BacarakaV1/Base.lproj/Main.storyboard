@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2mE-yH-tOV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nw0-sy-7zm">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -129,36 +129,35 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HalamanUtama" translatesAutoresizingMaskIntoConstraints="NO" id="5HA-sZ-clc">
                                 <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2" translatesAutoresizingMaskIntoConstraints="NO" id="8jL-gn-liU">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2" translatesAutoresizingMaskIntoConstraints="NO" id="8jL-gn-liU">
                                 <rect key="frame" x="218.5" y="281.5" width="300.5" height="225.5"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="H4I-6N-SUC" userLabel="KartuSuaraSV">
-                                <rect key="frame" x="95.5" y="522" width="546.5" height="287"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KartuSuara" translatesAutoresizingMaskIntoConstraints="NO" id="0Yy-xx-7DS">
-                                        <rect key="frame" x="0.0" y="0.0" width="263.5" height="287"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KartuSuara" translatesAutoresizingMaskIntoConstraints="NO" id="aXq-E4-HZb">
-                                        <rect key="frame" x="283.5" y="0.0" width="263" height="287"/>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KartuSuara" translatesAutoresizingMaskIntoConstraints="NO" id="0Yy-xx-7DS">
+                                <rect key="frame" x="61.5" y="614.5" width="205" height="153.5"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KartuSuara" translatesAutoresizingMaskIntoConstraints="NO" id="aXq-E4-HZb">
+                                <rect key="frame" x="457.5" y="614.5" width="205" height="153.5"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2G0-wE-m56"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="8jL-gn-liU" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="0.77" id="49w-B3-L7I"/>
-                            <constraint firstItem="H4I-6N-SUC" firstAttribute="height" secondItem="Ikg-27-6wU" secondAttribute="height" multiplier="0.28" id="7SE-5N-yP8"/>
-                            <constraint firstItem="H4I-6N-SUC" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.54" id="LOP-kz-ro8"/>
+                            <constraint firstItem="aXq-E4-HZb" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.82" id="Gbi-eV-nxT"/>
+                            <constraint firstItem="0Yy-xx-7DS" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="1.35" id="QxH-9d-zfV"/>
                             <constraint firstItem="5HA-sZ-clc" firstAttribute="top" secondItem="Ikg-27-6wU" secondAttribute="top" id="SbW-nQ-gAU"/>
                             <constraint firstItem="8jL-gn-liU" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.54" id="U00-tL-8cE"/>
-                            <constraint firstItem="H4I-6N-SUC" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="1.3" id="XQT-hJ-6up"/>
+                            <constraint firstItem="aXq-E4-HZb" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="1.35" id="V9Y-oU-Aj9"/>
                             <constraint firstItem="8jL-gn-liU" firstAttribute="height" secondItem="Ikg-27-6wU" secondAttribute="height" multiplier="0.22" id="ZQr-wB-d3f"/>
                             <constraint firstItem="8jL-gn-liU" firstAttribute="width" secondItem="Ikg-27-6wU" secondAttribute="width" multiplier="0.22" id="bFy-iV-DJU"/>
-                            <constraint firstItem="H4I-6N-SUC" firstAttribute="width" secondItem="Ikg-27-6wU" secondAttribute="width" multiplier="0.4" id="fzk-gY-YvS"/>
+                            <constraint firstItem="aXq-E4-HZb" firstAttribute="width" secondItem="Ikg-27-6wU" secondAttribute="width" multiplier="0.15" id="dde-Rx-c0c"/>
+                            <constraint firstItem="aXq-E4-HZb" firstAttribute="height" secondItem="Ikg-27-6wU" secondAttribute="height" multiplier="0.15" id="g1g-ef-3Sa"/>
                             <constraint firstAttribute="bottom" secondItem="5HA-sZ-clc" secondAttribute="bottom" id="iSd-Fa-KCo"/>
                             <constraint firstItem="5HA-sZ-clc" firstAttribute="leading" secondItem="Ikg-27-6wU" secondAttribute="leading" id="iWn-rc-Mog"/>
+                            <constraint firstItem="0Yy-xx-7DS" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.24" id="mkE-K2-VAY"/>
+                            <constraint firstItem="0Yy-xx-7DS" firstAttribute="height" secondItem="Ikg-27-6wU" secondAttribute="height" multiplier="0.15" id="mlo-o0-J3y"/>
                             <constraint firstAttribute="trailing" secondItem="5HA-sZ-clc" secondAttribute="trailing" id="pMJ-MY-HO2"/>
+                            <constraint firstItem="0Yy-xx-7DS" firstAttribute="width" secondItem="Ikg-27-6wU" secondAttribute="width" multiplier="0.15" id="u4k-BU-MyZ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -450,6 +449,9 @@
             <point key="canvasLocation" x="633" y="-35"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="MUG-T3-Xqh"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Group 2" width="225" height="225"/>
         <image name="Ha1" width="109" height="110"/>
