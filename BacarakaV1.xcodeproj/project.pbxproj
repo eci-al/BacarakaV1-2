@@ -28,6 +28,7 @@
 		3130E1DD2549900E00E175E4 /* klik.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = klik.mp3; sourceTree = "<group>"; };
 		319446B0254A27500040FE76 /* FadeTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 		492BC5B8254AAA89004B53D3 /* AnnotateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotateViewController.swift; sourceTree = "<group>"; };
+		A9494B42254ED52A006E187E /* BacarakaV1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BacarakaV1.entitlements; sourceTree = "<group>"; };
 		A94C2AB1254AD644002130D9 /* bacaCerita1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bacaCerita1.mp3; sourceTree = "<group>"; };
 		A94C2AB4254AD6E2002130D9 /* bacaCerita2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bacaCerita2.mp3; sourceTree = "<group>"; };
 		A94C2AB5254AD6E2002130D9 /* bacaCerita3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bacaCerita3.mp3; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 		E23F52FF25488A9200451539 /* BacarakaV1 */ = {
 			isa = PBXGroup;
 			children = (
+				A9494B42254ED52A006E187E /* BacarakaV1.entitlements */,
 				319446B0254A27500040FE76 /* FadeTransition.swift */,
 				E23F530025488A9200451539 /* AppDelegate.swift */,
 				E23F530225488A9200451539 /* SceneDelegate.swift */,
@@ -266,7 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -321,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

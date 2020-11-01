@@ -18,6 +18,7 @@ class FadeTransition: UIViewController {
 
 
 }
+
 extension UIView {
     func fadeTransition(_ duration:CFTimeInterval) {
         let animation = CATransition()
