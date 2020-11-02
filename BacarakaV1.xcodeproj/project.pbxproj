@@ -10,9 +10,9 @@
 		311254542549CEB30089884E /* notKlik.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 311254532549CEB30089884E /* notKlik.mp3 */; };
 		3130E1DE2549900E00E175E4 /* klik.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3130E1DD2549900E00E175E4 /* klik.mp3 */; };
 		319446B2254A27500040FE76 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319446B0254A27500040FE76 /* FadeTransition.swift */; };
+		31BC490C254FE5B500289E00 /* bacaCerita2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 31BC490B254FE5B500289E00 /* bacaCerita2.mp3 */; };
 		492BC5B9254AAA89004B53D3 /* AnnotateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492BC5B8254AAA89004B53D3 /* AnnotateViewController.swift */; };
 		A94C2AB2254AD644002130D9 /* bacaCerita1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A94C2AB1254AD644002130D9 /* bacaCerita1.mp3 */; };
-		A94C2AB6254AD6E2002130D9 /* bacaCerita2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A94C2AB4254AD6E2002130D9 /* bacaCerita2.mp3 */; };
 		A94C2AB7254AD6E2002130D9 /* bacaCerita3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A94C2AB5254AD6E2002130D9 /* bacaCerita3.mp3 */; };
 		E21DC88C254B376D00D5B43E /* TebakAksara.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DC88B254B376D00D5B43E /* TebakAksara.swift */; };
 		E23F530125488A9200451539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F530025488A9200451539 /* AppDelegate.swift */; };
@@ -27,10 +27,10 @@
 		311254532549CEB30089884E /* notKlik.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = notKlik.mp3; sourceTree = "<group>"; };
 		3130E1DD2549900E00E175E4 /* klik.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = klik.mp3; sourceTree = "<group>"; };
 		319446B0254A27500040FE76 /* FadeTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		31BC490B254FE5B500289E00 /* bacaCerita2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bacaCerita2.mp3; sourceTree = "<group>"; };
 		492BC5B8254AAA89004B53D3 /* AnnotateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotateViewController.swift; sourceTree = "<group>"; };
 		A9494B42254ED52A006E187E /* BacarakaV1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BacarakaV1.entitlements; sourceTree = "<group>"; };
 		A94C2AB1254AD644002130D9 /* bacaCerita1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bacaCerita1.mp3; sourceTree = "<group>"; };
-		A94C2AB4254AD6E2002130D9 /* bacaCerita2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bacaCerita2.mp3; sourceTree = "<group>"; };
 		A94C2AB5254AD6E2002130D9 /* bacaCerita3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bacaCerita3.mp3; sourceTree = "<group>"; };
 		E21DC88B254B376D00D5B43E /* TebakAksara.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TebakAksara.swift; sourceTree = "<group>"; };
 		E23F52FD25488A9200451539 /* BacarakaV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BacarakaV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				A94C2AB1254AD644002130D9 /* bacaCerita1.mp3 */,
-				A94C2AB4254AD6E2002130D9 /* bacaCerita2.mp3 */,
+				31BC490B254FE5B500289E00 /* bacaCerita2.mp3 */,
 				A94C2AB5254AD6E2002130D9 /* bacaCerita3.mp3 */,
 				3130E1DD2549900E00E175E4 /* klik.mp3 */,
 				311254532549CEB30089884E /* notKlik.mp3 */,
@@ -168,13 +168,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A94C2AB6254AD6E2002130D9 /* bacaCerita2.mp3 in Resources */,
 				311254542549CEB30089884E /* notKlik.mp3 in Resources */,
 				E23F530D25488A9200451539 /* LaunchScreen.storyboard in Resources */,
 				3130E1DE2549900E00E175E4 /* klik.mp3 in Resources */,
 				E23F530A25488A9200451539 /* Assets.xcassets in Resources */,
 				E23F530825488A9200451539 /* Main.storyboard in Resources */,
 				A94C2AB2254AD644002130D9 /* bacaCerita1.mp3 in Resources */,
+				31BC490C254FE5B500289E00 /* bacaCerita2.mp3 in Resources */,
 				A94C2AB7254AD6E2002130D9 /* bacaCerita3.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
