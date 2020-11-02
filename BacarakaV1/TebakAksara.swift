@@ -10,8 +10,8 @@ import UIKit
 class TebakAksara: UIViewController {
     
     @IBOutlet weak var KartuAksara: UIImageView!
-    @IBOutlet weak var suaraAksaraBenar: UIImageView!
-    @IBOutlet weak var suaraAksaraSalah: UIImageView!
+    @IBOutlet weak var bekasBenar: UIImageView!
+    @IBOutlet weak var HaBenar: UIImageView!
     
     var KartuAksaraOrigin:CGPoint!
     
@@ -36,8 +36,10 @@ class TebakAksara: UIViewController {
         case .began, .changed:
             moveViewWithPan(view: fileView, sender: sender)
         case .ended:
-            if fileView.frame.intersects(suaraAksaraBenar.frame) {
+            if fileView.frame.intersects(bekasBenar.frame) {
                 deleteView(view: fileView)
+                showHa(view: HaBenar)
+                
             } else {
                 returnViewToOrigin(view: fileView)
             }
@@ -62,6 +64,12 @@ class TebakAksara: UIViewController {
     func deleteView(view: UIView) {
         UIView.animate(withDuration: 0.3, animations: {
             view.alpha = 0.0
+        })
+    }
+    
+    func showHa(view: UIView) {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.HaBenar.alpha = 1
         })
     }
 }

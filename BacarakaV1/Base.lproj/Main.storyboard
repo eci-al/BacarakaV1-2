@@ -42,7 +42,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="IGU-Sx-hKF" userLabel="DaftarIsi">
                                 <rect key="frame" x="874" y="317.5" width="410" height="512"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daftar Isi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-BP-1k1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daftar Isi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-BP-1k1">
                                         <rect key="frame" x="0.0" y="0.0" width="410" height="41"/>
                                         <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="36"/>
                                         <color key="textColor" red="0.2784313725" green="0.17254901959999999" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -129,41 +129,55 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HalamanUtama" translatesAutoresizingMaskIntoConstraints="NO" id="5HA-sZ-clc">
                                 <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bekas robekan kertas" translatesAutoresizingMaskIntoConstraints="NO" id="0Yy-xx-7DS" userLabel="bekas benar">
+                                <rect key="frame" x="68.5" y="512" width="273" height="205"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bekas robekan kertas" translatesAutoresizingMaskIntoConstraints="NO" id="wsY-XY-JpB" userLabel="bekas atas">
+                                <rect key="frame" x="218.5" y="246" width="300.5" height="225"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bekas robekan kertas" translatesAutoresizingMaskIntoConstraints="NO" id="aXq-E4-HZb" userLabel="bekas salah">
+                                <rect key="frame" x="382.5" y="512" width="273" height="205"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2" translatesAutoresizingMaskIntoConstraints="NO" id="8jL-gn-liU">
-                                <rect key="frame" x="218.5" y="281.5" width="300.5" height="225.5"/>
+                                <rect key="frame" x="198" y="240.5" width="341.5" height="235.5"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KartuSuara" translatesAutoresizingMaskIntoConstraints="NO" id="0Yy-xx-7DS">
-                                <rect key="frame" x="61.5" y="614.5" width="205" height="153.5"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KartuSuara" translatesAutoresizingMaskIntoConstraints="NO" id="aXq-E4-HZb">
-                                <rect key="frame" x="457.5" y="614.5" width="205" height="153.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2" translatesAutoresizingMaskIntoConstraints="NO" id="lNj-Ed-MK0" userLabel="HaBenar">
+                                <rect key="frame" x="54.5" y="507" width="300.5" height="215"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2G0-wE-m56"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="8jL-gn-liU" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="0.77" id="49w-B3-L7I"/>
-                            <constraint firstItem="aXq-E4-HZb" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.82" id="Gbi-eV-nxT"/>
-                            <constraint firstItem="0Yy-xx-7DS" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="1.35" id="QxH-9d-zfV"/>
+                            <constraint firstItem="wsY-XY-JpB" firstAttribute="height" secondItem="5HA-sZ-clc" secondAttribute="height" multiplier="0.22" id="0iF-bD-0un"/>
+                            <constraint firstItem="lNj-Ed-MK0" firstAttribute="width" secondItem="5HA-sZ-clc" secondAttribute="width" multiplier="0.22" id="1P7-1f-7b8"/>
+                            <constraint firstItem="wsY-XY-JpB" firstAttribute="width" secondItem="5HA-sZ-clc" secondAttribute="width" multiplier="0.22" id="2uS-xH-P5c"/>
+                            <constraint firstItem="wsY-XY-JpB" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.54" id="3cT-da-90w"/>
+                            <constraint firstItem="8jL-gn-liU" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="0.7" id="49w-B3-L7I"/>
+                            <constraint firstItem="lNj-Ed-MK0" firstAttribute="centerX" secondItem="5HA-sZ-clc" secondAttribute="centerX" multiplier="0.3" id="6nP-Mh-P2R"/>
+                            <constraint firstItem="lNj-Ed-MK0" firstAttribute="height" secondItem="5HA-sZ-clc" secondAttribute="height" multiplier="0.21" id="CcE-Pj-GLh"/>
+                            <constraint firstItem="aXq-E4-HZb" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.76" id="Gbi-eV-nxT"/>
+                            <constraint firstItem="lNj-Ed-MK0" firstAttribute="centerY" secondItem="5HA-sZ-clc" secondAttribute="centerY" multiplier="1.2" id="LPa-oK-hXB"/>
+                            <constraint firstItem="0Yy-xx-7DS" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="1.2" id="QxH-9d-zfV"/>
                             <constraint firstItem="5HA-sZ-clc" firstAttribute="top" secondItem="Ikg-27-6wU" secondAttribute="top" id="SbW-nQ-gAU"/>
                             <constraint firstItem="8jL-gn-liU" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.54" id="U00-tL-8cE"/>
-                            <constraint firstItem="aXq-E4-HZb" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="1.35" id="V9Y-oU-Aj9"/>
-                            <constraint firstItem="8jL-gn-liU" firstAttribute="height" secondItem="Ikg-27-6wU" secondAttribute="height" multiplier="0.22" id="ZQr-wB-d3f"/>
-                            <constraint firstItem="8jL-gn-liU" firstAttribute="width" secondItem="Ikg-27-6wU" secondAttribute="width" multiplier="0.22" id="bFy-iV-DJU"/>
-                            <constraint firstItem="aXq-E4-HZb" firstAttribute="width" secondItem="Ikg-27-6wU" secondAttribute="width" multiplier="0.15" id="dde-Rx-c0c"/>
-                            <constraint firstItem="aXq-E4-HZb" firstAttribute="height" secondItem="Ikg-27-6wU" secondAttribute="height" multiplier="0.15" id="g1g-ef-3Sa"/>
+                            <constraint firstItem="aXq-E4-HZb" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="1.2" id="V9Y-oU-Aj9"/>
+                            <constraint firstItem="8jL-gn-liU" firstAttribute="height" secondItem="Ikg-27-6wU" secondAttribute="height" multiplier="0.23" id="ZQr-wB-d3f"/>
+                            <constraint firstItem="wsY-XY-JpB" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="0.7" id="aX4-nf-4TF"/>
+                            <constraint firstItem="8jL-gn-liU" firstAttribute="width" secondItem="Ikg-27-6wU" secondAttribute="width" multiplier="0.25" id="bFy-iV-DJU"/>
+                            <constraint firstItem="aXq-E4-HZb" firstAttribute="width" secondItem="Ikg-27-6wU" secondAttribute="width" multiplier="0.2" id="dde-Rx-c0c"/>
+                            <constraint firstItem="aXq-E4-HZb" firstAttribute="height" secondItem="Ikg-27-6wU" secondAttribute="height" multiplier="0.2" id="g1g-ef-3Sa"/>
                             <constraint firstAttribute="bottom" secondItem="5HA-sZ-clc" secondAttribute="bottom" id="iSd-Fa-KCo"/>
                             <constraint firstItem="5HA-sZ-clc" firstAttribute="leading" secondItem="Ikg-27-6wU" secondAttribute="leading" id="iWn-rc-Mog"/>
-                            <constraint firstItem="0Yy-xx-7DS" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.24" id="mkE-K2-VAY"/>
-                            <constraint firstItem="0Yy-xx-7DS" firstAttribute="height" secondItem="Ikg-27-6wU" secondAttribute="height" multiplier="0.15" id="mlo-o0-J3y"/>
+                            <constraint firstItem="0Yy-xx-7DS" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.3" id="mkE-K2-VAY"/>
+                            <constraint firstItem="0Yy-xx-7DS" firstAttribute="height" secondItem="Ikg-27-6wU" secondAttribute="height" multiplier="0.2" id="mlo-o0-J3y"/>
                             <constraint firstAttribute="trailing" secondItem="5HA-sZ-clc" secondAttribute="trailing" id="pMJ-MY-HO2"/>
-                            <constraint firstItem="0Yy-xx-7DS" firstAttribute="width" secondItem="Ikg-27-6wU" secondAttribute="width" multiplier="0.15" id="u4k-BU-MyZ"/>
+                            <constraint firstItem="0Yy-xx-7DS" firstAttribute="width" secondItem="Ikg-27-6wU" secondAttribute="width" multiplier="0.2" id="u4k-BU-MyZ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="HaBenar" destination="lNj-Ed-MK0" id="KJz-CQ-Zuz"/>
                         <outlet property="KartuAksara" destination="8jL-gn-liU" id="6oG-Rh-bYv"/>
-                        <outlet property="suaraAksaraBenar" destination="0Yy-xx-7DS" id="7zb-iG-Z04"/>
-                        <outlet property="suaraAksaraSalah" destination="aXq-E4-HZb" id="rbn-Jc-b7y"/>
+                        <outlet property="bekasBenar" destination="0Yy-xx-7DS" id="qHk-25-n7q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pdf-g2-xjt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -467,9 +481,9 @@
         <image name="Ha8" width="110" height="109"/>
         <image name="Ha9" width="110" height="109"/>
         <image name="HalamanUtama" width="1080" height="810"/>
-        <image name="KartuSuara" width="212" height="131"/>
         <image name="Scroll open landscape with aksara" width="1025" height="699"/>
         <image name="backgroundBab1" width="1088" height="816"/>
+        <image name="bekas robekan kertas" width="209" height="125"/>
         <image name="bsckground" width="1088" height="816"/>
         <image name="gulungan" width="218" height="130"/>
         <image name="resetButton" width="123" height="98"/>
