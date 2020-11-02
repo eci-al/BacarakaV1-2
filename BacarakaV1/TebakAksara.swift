@@ -12,6 +12,9 @@ class TebakAksara: UIViewController {
     @IBOutlet weak var KartuAksara: UIImageView!
     @IBOutlet weak var bekasBenar: UIImageView!
     @IBOutlet weak var HaBenar: UIImageView!
+    @IBOutlet weak var SpeakerBenar: UIButton!
+    @IBOutlet weak var SpeakerSalah: UIButton!
+    
     
     var KartuAksaraOrigin:CGPoint!
     
