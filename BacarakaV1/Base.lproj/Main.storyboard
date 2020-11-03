@@ -147,10 +147,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skL-hQ-T7o" userLabel="speakerBenar">
                                 <rect key="frame" x="68.5" y="665.5" width="273" height="205"/>
                                 <state key="normal" image="soundButton"/>
+                                <connections>
+                                    <action selector="benarDidTapped:" destination="nw0-sy-7zm" eventType="touchUpInside" id="KFA-su-X2V"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfY-L1-7Xz" userLabel="speakerSalah">
                                 <rect key="frame" x="375.5" y="665.5" width="273.5" height="205"/>
                                 <state key="normal" image="soundButton"/>
+                                <connections>
+                                    <action selector="salahDidTapped:" destination="nw0-sy-7zm" eventType="touchUpInside" id="fCe-xY-4pw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2G0-wE-m56"/>
@@ -481,9 +487,6 @@
             <point key="canvasLocation" x="633" y="-35"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="MUG-T3-Xqh"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Group 2" width="225" height="225"/>
         <image name="Ha1" width="109" height="110"/>

@@ -6,8 +6,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class TebakAksara: UIViewController {
+    
+//        var player: AVAudioPlayer?
+    var suaraBenar = AVAudioPlayer()
+    var suaraSalah = AVAudioPlayer()
     
     @IBOutlet weak var KartuAksara: UIImageView!
     @IBOutlet weak var bekasBenar: UIImageView!
@@ -15,16 +20,25 @@ class TebakAksara: UIViewController {
     @IBOutlet weak var SpeakerBenar: UIButton!
     @IBOutlet weak var SpeakerSalah: UIButton!
     
-    
     var KartuAksaraOrigin:CGPoint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        suara()
         
         addPanGesture(view: KartuAksara)
         KartuAksaraOrigin = KartuAksara.frame.origin
         view.bringSubviewToFront(KartuAksara)
     }
+    
+    @IBAction func benarDidTapped(_ sender: Any) {
+        suaraBenar.play()
+    }
+    
+    @IBAction func salahDidTapped(_ sender: Any) {
+        suaraSalah.play()
+    }
+    
     
     func addPanGesture(view:UIView) {
         
@@ -75,4 +89,18 @@ class TebakAksara: UIViewController {
             self.HaBenar.alpha = 1
         })
     }
+    
+    func suara() {
+        do {
+            suaraBenar = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "klik", ofType: "mp3")!))
+        } catch {
+            print (error)
+        }
+        do {
+            suaraSalah = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "notKlik", ofType: "mp3")!))
+        } catch {
+            print (error)
+        }
+    }
+    
 }
