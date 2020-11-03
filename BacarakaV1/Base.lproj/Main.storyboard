@@ -126,7 +126,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HalamanUtama" translatesAutoresizingMaskIntoConstraints="NO" id="5HA-sZ-clc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Halaman Kosong" translatesAutoresizingMaskIntoConstraints="NO" id="5HA-sZ-clc">
                                 <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bekas robekan kertas" translatesAutoresizingMaskIntoConstraints="NO" id="0Yy-xx-7DS" userLabel="bekas benar">
@@ -158,6 +158,16 @@
                                     <action selector="salahDidTapped:" destination="nw0-sy-7zm" eventType="touchUpInside" id="fCe-xY-4pw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyb-87-WWm">
+                                <rect key="frame" x="149" y="81" width="98" height="53"/>
+                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="36"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2mE-yH-tOV" kind="show" id="MXL-1o-HTe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2G0-wE-m56"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -181,6 +191,7 @@
                             <constraint firstItem="8jL-gn-liU" firstAttribute="height" secondItem="Ikg-27-6wU" secondAttribute="height" multiplier="0.23" id="ZQr-wB-d3f"/>
                             <constraint firstItem="skL-hQ-T7o" firstAttribute="width" secondItem="5HA-sZ-clc" secondAttribute="width" multiplier="0.2" id="Zto-qC-3CN"/>
                             <constraint firstItem="wsY-XY-JpB" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="0.7" id="aX4-nf-4TF"/>
+                            <constraint firstItem="Qyb-87-WWm" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.29" id="axy-gX-LRy"/>
                             <constraint firstItem="8jL-gn-liU" firstAttribute="width" secondItem="Ikg-27-6wU" secondAttribute="width" multiplier="0.25" id="bFy-iV-DJU"/>
                             <constraint firstItem="aXq-E4-HZb" firstAttribute="width" secondItem="Ikg-27-6wU" secondAttribute="width" multiplier="0.2" id="dde-Rx-c0c"/>
                             <constraint firstItem="aXq-E4-HZb" firstAttribute="height" secondItem="Ikg-27-6wU" secondAttribute="height" multiplier="0.2" id="g1g-ef-3Sa"/>
@@ -190,6 +201,7 @@
                             <constraint firstItem="nfY-L1-7Xz" firstAttribute="height" secondItem="5HA-sZ-clc" secondAttribute="height" multiplier="0.2" id="l4s-oi-p73"/>
                             <constraint firstItem="0Yy-xx-7DS" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.3" id="mkE-K2-VAY"/>
                             <constraint firstItem="0Yy-xx-7DS" firstAttribute="height" secondItem="Ikg-27-6wU" secondAttribute="height" multiplier="0.2" id="mlo-o0-J3y"/>
+                            <constraint firstItem="Qyb-87-WWm" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="0.21" id="n56-aw-i8n"/>
                             <constraint firstAttribute="trailing" secondItem="5HA-sZ-clc" secondAttribute="trailing" id="pMJ-MY-HO2"/>
                             <constraint firstItem="skL-hQ-T7o" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.3" id="rHd-59-L8e"/>
                             <constraint firstItem="0Yy-xx-7DS" firstAttribute="width" secondItem="Ikg-27-6wU" secondAttribute="width" multiplier="0.2" id="u4k-BU-MyZ"/>
@@ -487,6 +499,9 @@
             <point key="canvasLocation" x="633" y="-35"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="MXL-1o-HTe"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Group 2" width="225" height="225"/>
         <image name="Ha1" width="109" height="110"/>
@@ -501,6 +516,7 @@
         <image name="Ha7" width="110" height="110"/>
         <image name="Ha8" width="110" height="109"/>
         <image name="Ha9" width="110" height="109"/>
+        <image name="Halaman Kosong" width="1088" height="816"/>
         <image name="HalamanUtama" width="1080" height="810"/>
         <image name="Scroll open landscape with aksara" width="1025" height="699"/>
         <image name="backgroundBab1" width="1088" height="816"/>
