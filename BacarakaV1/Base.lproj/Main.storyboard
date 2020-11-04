@@ -138,7 +138,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bekas robekan kertas" translatesAutoresizingMaskIntoConstraints="NO" id="aXq-E4-HZb" userLabel="bekas salah">
                                 <rect key="frame" x="382.5" y="512" width="273" height="205"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2" translatesAutoresizingMaskIntoConstraints="NO" id="YhQ-rK-mMb" userLabel="HaBenar1">
+                            <imageView clipsSubviews="YES" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2" translatesAutoresizingMaskIntoConstraints="NO" id="YhQ-rK-mMb" userLabel="HaBenar1">
                                 <rect key="frame" x="369" y="502" width="300.5" height="225"/>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2" translatesAutoresizingMaskIntoConstraints="NO" id="8jL-gn-liU">
@@ -221,6 +221,7 @@
                         <outlet property="KartuAksara" destination="8jL-gn-liU" id="6oG-Rh-bYv"/>
                         <outlet property="SpeakerBenar" destination="skL-hQ-T7o" id="TQb-JE-5ot"/>
                         <outlet property="SpeakerSalah" destination="nfY-L1-7Xz" id="xlD-0F-KJV"/>
+                        <outlet property="bekasAtas" destination="wsY-XY-JpB" id="iaQ-M3-9c9"/>
                         <outlet property="bekasBenar" destination="0Yy-xx-7DS" id="qHk-25-n7q"/>
                         <outlet property="bekasSalah" destination="aXq-E4-HZb" id="UOv-VX-KZo"/>
                     </connections>
