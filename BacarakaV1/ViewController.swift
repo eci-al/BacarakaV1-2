@@ -165,6 +165,71 @@ class ViewController: UIViewController {
         }
     }
     
+    func gulungansukses() {
+    //Use half the screen size width when on an iPhone and on Landscape
+        let image: UIImage = UIImage(named: "gulunganreward")!
+        let imageView = UIImageView(image: image)
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+
+        //add to sub view
+        view.addSubview(imageView)
+
+        //center image
+        let centerXConst = NSLayoutConstraint(item: imageView, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1.0, constant: 0.525)
+        let centerYConst = NSLayoutConstraint(item: imageView, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1.0, constant: 0.0)
+
+//        let heightConstraint = NSLayoutConstraint(item: imageView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 700)
+//        let widthConstraint = NSLayoutConstraint(item: imageView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: self.view.frame.width / 2)
+//           imageView.addConstraints([heightConstraint, widthConstraint])
+
+        NSLayoutConstraint.activate([centerXConst, centerYConst])
+    
+    
+        let label = UILabel()//(frame: CGRect(x: view.frame.width/2, y: 0, width: 500, height: 700)
+        label.lineBreakMode = NSLineBreakMode.byWordWrapping
+        label.numberOfLines = 3
+        label.font = UIFont.systemFont(ofSize: 40)
+        label.text = "Selamat!!! \n Kamu telah menyusun \n satu aksara"
+        self.view.addSubview(label)
+    
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        label.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        label.textAlignment = .center
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.2
+    
+        UIView.animate(withDuration: 5.0,
+                        animations: {
+                            imageView.alpha = 0.0
+                            label.alpha = 0.0
+                        },
+                        completion:{_ in imageView.removeFromSuperview()
+                    })
+        
+            let imageButton = UIImage(named: "next") as UIImage?
+            let button   = UIButton(type: UIButton.ButtonType.custom) as UIButton
+    //            button.frame = CGRect(x: 500, y: 300, width: view.frame.size.width, height: view.frame.size.height)
+            button.setImage(imageButton, for: .normal)
+            button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+            self.view.addSubview(button)
+            button.translatesAutoresizingMaskIntoConstraints = false
+                let widthContraints =  NSLayoutConstraint(item: button, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 80)
+                
+                let heightContraints = NSLayoutConstraint(item: button, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 80)
+                
+                let xContraints = NSLayoutConstraint(item: button, attribute: NSLayoutConstraint.Attribute.bottomMargin, relatedBy: NSLayoutConstraint.Relation.equal, toItem: view, attribute: NSLayoutConstraint.Attribute.bottomMargin, multiplier: 1, constant: -50)
+                
+                let yContraints = NSLayoutConstraint(item: button, attribute: NSLayoutConstraint.Attribute.trailing, relatedBy: NSLayoutConstraint.Relation.equal, toItem: view, attribute: NSLayoutConstraint.Attribute.trailing, multiplier: 1, constant: -30)
+                
+                NSLayoutConstraint.activate([heightContraints,widthContraints,xContraints,yContraints])
+
+       // let alert = UIAlertController(title: "You Won!", message: "Congratulations 👍", preferredStyle: .alert)
+        //alert.addAction(UIAlertAction(title: "Next", style: //UIAlertAction.Style.default, handler: { action -> Void in
+            // self.performSegue(withIdentifier: "win", sender: self)
+    }
+    
     //untuk memastikan puzzle sudah benar :*
     func verifyGoal() {
         var status = true
@@ -196,52 +261,13 @@ class ViewController: UIViewController {
         allButtons[9].isEnabled = false
         allButtons[10].isEnabled = false
         allButtons[11].isEnabled = false
+            
+        gulungansukses()
         
-        //let view = UIView()
-        view.backgroundColor = .clear
-        
-        let image = UIImage(named: "gulunganreward")
-        
-        let imageView: UIImageView = UIImageView()
-        imageView.contentMode = UIView.ContentMode.scaleAspectFit
-        imageView.frame.size.width = 800
-        imageView.frame.size.height = 1500
-        imageView.center = self.view.center
-        
-        imageView.image = image
-        view.addSubview(imageView)
-        //self.view = view
-        
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 500, height: 700))
-        label.center = CGPoint(x: 680, y: 450)
-        label.lineBreakMode = NSLineBreakMode.byWordWrapping
-        label.numberOfLines = 3
-        label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 44)
-        label.text = "Selamat!!! \n Kamu telah menyusun \n satu aksara"
-        self.view.addSubview(label)
-        
-        UIView.animate(withDuration: 5.0,
-                        animations: {
-                            imageView.alpha = 0.0
-                            label.alpha = 0.0
-                        },
-                        completion:{_ in imageView.removeFromSuperview()
-                    })
-        
-            let imageButton = UIImage(named: "next") as UIImage?
-            let button   = UIButton(type: UIButton.ButtonType.custom) as UIButton
-            button.frame = CGRect(x: 1200, y: 825, width: 150, height: 150)
-            button.setImage(imageButton, for: .normal)
-            button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
-            self.view.addSubview(button)
-
-           // let alert = UIAlertController(title: "You Won!", message: "Congratulations 👍", preferredStyle: .alert)
-            //alert.addAction(UIAlertAction(title: "Next", style: //UIAlertAction.Style.default, handler: { action -> Void in
-                // self.performSegue(withIdentifier: "win", sender: self)
+             //self.present(alert, animated: true, completion: nil)
         }
-            //self.present(alert, animated: true, completion: nil)
-        }
+        
+    }
     
     @objc private func didTapButton() {
         let vc = AnnotateViewController()
