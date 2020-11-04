@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nw0-sy-7zm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2mE-yH-tOV">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -121,7 +121,7 @@
         <!--Tebak Aksara-->
         <scene sceneID="uPo-Qu-zKe">
             <objects>
-                <viewController id="nw0-sy-7zm" customClass="TebakAksara" customModule="BacarakaV1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="nw0-sy-7zm" customClass="TebakAksara" customModule="BacarakaV1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ikg-27-6wU">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,6 +215,7 @@
                             <constraint firstItem="nfY-L1-7Xz" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="1.5" id="wuY-bY-PYs"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="1FB-nU-3Nb"/>
                     <connections>
                         <outlet property="HaBenar" destination="lNj-Ed-MK0" id="KJz-CQ-Zuz"/>
                         <outlet property="HaBenar1" destination="YhQ-rK-mMb" id="zjv-jz-n7c"/>
@@ -380,6 +381,13 @@
                                     <constraint firstAttribute="trailing" secondItem="9fB-fQ-c7R" secondAttribute="trailing" id="xNQ-zc-0X0"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcc-M6-JHx">
+                                <rect key="frame" x="1161" y="819" width="137" height="102.5"/>
+                                <state key="normal" image="next"/>
+                                <connections>
+                                    <segue destination="nw0-sy-7zm" kind="show" id="QZY-6k-5OB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -389,18 +397,22 @@
                             <constraint firstItem="9Ta-aM-Eh4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.525" id="3x2-Fm-e2Q"/>
                             <constraint firstItem="b5I-3b-6fi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.29" id="77k-ML-22t"/>
                             <constraint firstItem="1PH-VR-9TB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.17" id="E0O-KB-ht7"/>
+                            <constraint firstItem="fcc-M6-JHx" firstAttribute="height" secondItem="FRV-kf-u87" secondAttribute="height" multiplier="0.1" id="F8N-nO-aSu"/>
                             <constraint firstItem="1PH-VR-9TB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.82" id="H3i-Nk-7mw"/>
                             <constraint firstAttribute="trailing" secondItem="FRV-kf-u87" secondAttribute="trailing" constant="-1" id="Kn7-ZQ-N6h"/>
+                            <constraint firstItem="fcc-M6-JHx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.8" id="NcU-GY-b8K"/>
                             <constraint firstItem="FRV-kf-u87" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PGV-vA-8Ih"/>
                             <constraint firstItem="b5I-3b-6fi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.192" id="Sze-3a-kyu"/>
                             <constraint firstItem="FRV-kf-u87" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-1" id="TkL-vm-kNl"/>
                             <constraint firstAttribute="bottom" secondItem="FRV-kf-u87" secondAttribute="bottom" id="WBu-QT-A6M"/>
                             <constraint firstItem="9Ta-aM-Eh4" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.33" id="Wt0-ge-Xln"/>
                             <constraint firstItem="6c7-Cv-u0O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.05" id="ZbH-5d-Obx"/>
+                            <constraint firstItem="fcc-M6-JHx" firstAttribute="width" secondItem="FRV-kf-u87" secondAttribute="width" multiplier="0.1" id="fL0-w9-Y1N"/>
                             <constraint firstItem="6c7-Cv-u0O" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="fTX-Pc-v4b"/>
                             <constraint firstItem="6c7-Cv-u0O" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="ftQ-e2-TH3"/>
                             <constraint firstItem="1PH-VR-9TB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.18" id="i3R-Lo-mk3"/>
                             <constraint firstItem="9Ta-aM-Eh4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="jvi-Ea-pqJ"/>
+                            <constraint firstItem="fcc-M6-JHx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.7" id="qyN-lh-vfT"/>
                             <constraint firstItem="1PH-VR-9TB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.17" id="zc0-Ju-or0"/>
                         </constraints>
                     </view>
@@ -533,6 +545,7 @@
         <image name="bekas robekan kertas" width="209" height="125"/>
         <image name="bsckground" width="1088" height="816"/>
         <image name="gulungan" width="218" height="130"/>
+        <image name="next" width="86" height="69"/>
         <image name="resetButton" width="123" height="98"/>
         <image name="soundButton" width="151" height="121"/>
         <systemColor name="systemBackgroundColor">
