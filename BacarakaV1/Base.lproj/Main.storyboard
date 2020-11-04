@@ -138,6 +138,9 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bekas robekan kertas" translatesAutoresizingMaskIntoConstraints="NO" id="aXq-E4-HZb" userLabel="bekas salah">
                                 <rect key="frame" x="382.5" y="512" width="273" height="205"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2" translatesAutoresizingMaskIntoConstraints="NO" id="YhQ-rK-mMb" userLabel="HaBenar1">
+                                <rect key="frame" x="369" y="502" width="300.5" height="225"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2" translatesAutoresizingMaskIntoConstraints="NO" id="8jL-gn-liU">
                                 <rect key="frame" x="198" y="240.5" width="341.5" height="235.5"/>
                             </imageView>
@@ -181,12 +184,14 @@
                             <constraint firstItem="lNj-Ed-MK0" firstAttribute="centerX" secondItem="5HA-sZ-clc" secondAttribute="centerX" multiplier="0.3" id="6nP-Mh-P2R"/>
                             <constraint firstItem="lNj-Ed-MK0" firstAttribute="height" secondItem="5HA-sZ-clc" secondAttribute="height" multiplier="0.21" id="CcE-Pj-GLh"/>
                             <constraint firstItem="aXq-E4-HZb" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.76" id="Gbi-eV-nxT"/>
+                            <constraint firstItem="YhQ-rK-mMb" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="1.2" id="HWk-Fl-P7G"/>
                             <constraint firstItem="lNj-Ed-MK0" firstAttribute="centerY" secondItem="5HA-sZ-clc" secondAttribute="centerY" multiplier="1.2" id="LPa-oK-hXB"/>
                             <constraint firstItem="0Yy-xx-7DS" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="1.2" id="QxH-9d-zfV"/>
                             <constraint firstItem="5HA-sZ-clc" firstAttribute="top" secondItem="Ikg-27-6wU" secondAttribute="top" id="SbW-nQ-gAU"/>
                             <constraint firstItem="nfY-L1-7Xz" firstAttribute="width" secondItem="5HA-sZ-clc" secondAttribute="width" multiplier="0.2" id="T5r-XY-bmr"/>
                             <constraint firstItem="8jL-gn-liU" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.54" id="U00-tL-8cE"/>
                             <constraint firstItem="skL-hQ-T7o" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="1.5" id="UlQ-iY-kjp"/>
+                            <constraint firstItem="YhQ-rK-mMb" firstAttribute="width" secondItem="5HA-sZ-clc" secondAttribute="width" multiplier="0.22" id="UpB-8z-f9M"/>
                             <constraint firstItem="aXq-E4-HZb" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="1.2" id="V9Y-oU-Aj9"/>
                             <constraint firstItem="8jL-gn-liU" firstAttribute="height" secondItem="Ikg-27-6wU" secondAttribute="height" multiplier="0.23" id="ZQr-wB-d3f"/>
                             <constraint firstItem="skL-hQ-T7o" firstAttribute="width" secondItem="5HA-sZ-clc" secondAttribute="width" multiplier="0.2" id="Zto-qC-3CN"/>
@@ -194,8 +199,10 @@
                             <constraint firstItem="Qyb-87-WWm" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.29" id="axy-gX-LRy"/>
                             <constraint firstItem="8jL-gn-liU" firstAttribute="width" secondItem="Ikg-27-6wU" secondAttribute="width" multiplier="0.25" id="bFy-iV-DJU"/>
                             <constraint firstItem="aXq-E4-HZb" firstAttribute="width" secondItem="Ikg-27-6wU" secondAttribute="width" multiplier="0.2" id="dde-Rx-c0c"/>
+                            <constraint firstItem="YhQ-rK-mMb" firstAttribute="height" secondItem="5HA-sZ-clc" secondAttribute="height" multiplier="0.22" id="eZj-Jo-eB2"/>
                             <constraint firstItem="aXq-E4-HZb" firstAttribute="height" secondItem="Ikg-27-6wU" secondAttribute="height" multiplier="0.2" id="g1g-ef-3Sa"/>
                             <constraint firstItem="nfY-L1-7Xz" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.75" id="hfI-h4-yev"/>
+                            <constraint firstItem="YhQ-rK-mMb" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.76" id="hve-mL-MP7"/>
                             <constraint firstAttribute="bottom" secondItem="5HA-sZ-clc" secondAttribute="bottom" id="iSd-Fa-KCo"/>
                             <constraint firstItem="5HA-sZ-clc" firstAttribute="leading" secondItem="Ikg-27-6wU" secondAttribute="leading" id="iWn-rc-Mog"/>
                             <constraint firstItem="nfY-L1-7Xz" firstAttribute="height" secondItem="5HA-sZ-clc" secondAttribute="height" multiplier="0.2" id="l4s-oi-p73"/>
@@ -210,10 +217,12 @@
                     </view>
                     <connections>
                         <outlet property="HaBenar" destination="lNj-Ed-MK0" id="KJz-CQ-Zuz"/>
+                        <outlet property="HaBenar1" destination="YhQ-rK-mMb" id="zjv-jz-n7c"/>
                         <outlet property="KartuAksara" destination="8jL-gn-liU" id="6oG-Rh-bYv"/>
                         <outlet property="SpeakerBenar" destination="skL-hQ-T7o" id="TQb-JE-5ot"/>
                         <outlet property="SpeakerSalah" destination="nfY-L1-7Xz" id="xlD-0F-KJV"/>
                         <outlet property="bekasBenar" destination="0Yy-xx-7DS" id="qHk-25-n7q"/>
+                        <outlet property="bekasSalah" destination="aXq-E4-HZb" id="UOv-VX-KZo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pdf-g2-xjt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -16,7 +16,9 @@ class TebakAksara: UIViewController {
     
     @IBOutlet weak var KartuAksara: UIImageView!
     @IBOutlet weak var bekasBenar: UIImageView!
+    @IBOutlet weak var bekasSalah: UIImageView!
     @IBOutlet weak var HaBenar: UIImageView!
+    @IBOutlet weak var HaBenar1: UIImageView!
     @IBOutlet weak var SpeakerBenar: UIButton!
     @IBOutlet weak var SpeakerSalah: UIButton!
     
@@ -57,6 +59,9 @@ class TebakAksara: UIViewController {
                 deleteView(view: fileView)
                 showHa(view: HaBenar)
                 
+            } else if fileView.frame.intersects(bekasSalah.frame){
+                deleteView(view: fileView)
+                showHa1(view: HaBenar1)
             } else {
                 returnViewToOrigin(view: fileView)
             }
@@ -90,14 +95,20 @@ class TebakAksara: UIViewController {
         })
     }
     
+    func showHa1(view: UIView) {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.HaBenar1.alpha = 1
+        })
+    }
+    
     func suara() {
         do {
-            suaraBenar = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "klik", ofType: "mp3")!))
+            suaraBenar = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "suaraHa", ofType: "mp3")!))
         } catch {
             print (error)
         }
         do {
-            suaraSalah = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "notKlik", ofType: "mp3")!))
+            suaraSalah = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "suaraLa", ofType: "mp3")!))
         } catch {
             print (error)
         }
