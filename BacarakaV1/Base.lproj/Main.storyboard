@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2mE-yH-tOV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ERj-Ah-MIU">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -133,7 +132,7 @@
                                 <rect key="frame" x="68.5" y="512" width="273" height="205"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bekas robekan kertas" translatesAutoresizingMaskIntoConstraints="NO" id="wsY-XY-JpB" userLabel="bekas atas">
-                                <rect key="frame" x="218.5" y="246" width="300.5" height="225"/>
+                                <rect key="frame" x="232" y="256" width="273.5" height="205"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bekas robekan kertas" translatesAutoresizingMaskIntoConstraints="NO" id="aXq-E4-HZb" userLabel="bekas salah">
                                 <rect key="frame" x="382.5" y="512" width="273" height="205"/>
@@ -142,7 +141,7 @@
                                 <rect key="frame" x="369" y="502" width="300.5" height="225"/>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2" translatesAutoresizingMaskIntoConstraints="NO" id="8jL-gn-liU">
-                                <rect key="frame" x="198" y="240.5" width="341.5" height="235.5"/>
+                                <rect key="frame" x="218.5" y="256" width="300.5" height="205"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2" translatesAutoresizingMaskIntoConstraints="NO" id="lNj-Ed-MK0" userLabel="HaBenar">
                                 <rect key="frame" x="54.5" y="507" width="300.5" height="215"/>
@@ -175,9 +174,9 @@
                         <viewLayoutGuide key="safeArea" id="2G0-wE-m56"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="wsY-XY-JpB" firstAttribute="height" secondItem="5HA-sZ-clc" secondAttribute="height" multiplier="0.22" id="0iF-bD-0un"/>
+                            <constraint firstItem="wsY-XY-JpB" firstAttribute="height" secondItem="Ikg-27-6wU" secondAttribute="height" multiplier="0.2" id="0iF-bD-0un"/>
                             <constraint firstItem="lNj-Ed-MK0" firstAttribute="width" secondItem="5HA-sZ-clc" secondAttribute="width" multiplier="0.22" id="1P7-1f-7b8"/>
-                            <constraint firstItem="wsY-XY-JpB" firstAttribute="width" secondItem="5HA-sZ-clc" secondAttribute="width" multiplier="0.22" id="2uS-xH-P5c"/>
+                            <constraint firstItem="wsY-XY-JpB" firstAttribute="width" secondItem="Ikg-27-6wU" secondAttribute="width" multiplier="0.2" id="2uS-xH-P5c"/>
                             <constraint firstItem="wsY-XY-JpB" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.54" id="3cT-da-90w"/>
                             <constraint firstItem="skL-hQ-T7o" firstAttribute="height" secondItem="5HA-sZ-clc" secondAttribute="height" multiplier="0.2" id="43H-tn-ZFe"/>
                             <constraint firstItem="8jL-gn-liU" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="0.7" id="49w-B3-L7I"/>
@@ -193,11 +192,11 @@
                             <constraint firstItem="skL-hQ-T7o" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="1.5" id="UlQ-iY-kjp"/>
                             <constraint firstItem="YhQ-rK-mMb" firstAttribute="width" secondItem="5HA-sZ-clc" secondAttribute="width" multiplier="0.22" id="UpB-8z-f9M"/>
                             <constraint firstItem="aXq-E4-HZb" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="1.2" id="V9Y-oU-Aj9"/>
-                            <constraint firstItem="8jL-gn-liU" firstAttribute="height" secondItem="Ikg-27-6wU" secondAttribute="height" multiplier="0.23" id="ZQr-wB-d3f"/>
+                            <constraint firstItem="8jL-gn-liU" firstAttribute="height" secondItem="Ikg-27-6wU" secondAttribute="height" multiplier="0.2" id="ZQr-wB-d3f"/>
                             <constraint firstItem="skL-hQ-T7o" firstAttribute="width" secondItem="5HA-sZ-clc" secondAttribute="width" multiplier="0.2" id="Zto-qC-3CN"/>
                             <constraint firstItem="wsY-XY-JpB" firstAttribute="centerY" secondItem="Ikg-27-6wU" secondAttribute="centerY" multiplier="0.7" id="aX4-nf-4TF"/>
                             <constraint firstItem="Qyb-87-WWm" firstAttribute="centerX" secondItem="Ikg-27-6wU" secondAttribute="centerX" multiplier="0.29" id="axy-gX-LRy"/>
-                            <constraint firstItem="8jL-gn-liU" firstAttribute="width" secondItem="Ikg-27-6wU" secondAttribute="width" multiplier="0.25" id="bFy-iV-DJU"/>
+                            <constraint firstItem="8jL-gn-liU" firstAttribute="width" secondItem="Ikg-27-6wU" secondAttribute="width" multiplier="0.22" id="bFy-iV-DJU"/>
                             <constraint firstItem="aXq-E4-HZb" firstAttribute="width" secondItem="Ikg-27-6wU" secondAttribute="width" multiplier="0.2" id="dde-Rx-c0c"/>
                             <constraint firstItem="YhQ-rK-mMb" firstAttribute="height" secondItem="5HA-sZ-clc" secondAttribute="height" multiplier="0.22" id="eZj-Jo-eB2"/>
                             <constraint firstItem="aXq-E4-HZb" firstAttribute="height" secondItem="Ikg-27-6wU" secondAttribute="height" multiplier="0.2" id="g1g-ef-3Sa"/>

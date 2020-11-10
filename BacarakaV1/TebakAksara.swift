@@ -25,7 +25,9 @@ class TebakAksara: UIViewController {
     @IBOutlet weak var SpeakerSalah: UIButton!
     
     var KartuAksaraOrigin:CGPoint!
-    var HaBenarOrigin:CGPoint!
+    let correctPosition = CGPoint (x: 167, y: 607)
+    let incorrectPosition = CGPoint(x: 520, y: 646)
+    var HaBenar1Origin:CGPoint!
     
     
     override func viewDidLoad() {
@@ -35,7 +37,7 @@ class TebakAksara: UIViewController {
         addPanGesture(view: KartuAksara)
         addPanGesture2(view: HaBenar1)
         KartuAksaraOrigin = KartuAksara.frame.origin
-        HaBenarOrigin = HaBenar.frame.origin
+        HaBenar1Origin = HaBenar1.frame.origin
         view.bringSubviewToFront(KartuAksara)
         view.bringSubviewToFront(HaBenar1)
     }
@@ -62,18 +64,34 @@ class TebakAksara: UIViewController {
     
     // Refactor
     @objc func handlePan(sender: UIPanGestureRecognizer) {
+        
+        let point = sender.location(in: view)
+        let currentPosition = point
+       
+//        print(currentPosition)
+        
         let fileView = sender.view!
         switch sender.state {
         case .began, .changed:
             moveViewWithPan(view: fileView, sender: sender)
         case .ended:
-            if fileView.frame.intersects(bekasBenar.frame) {
+            
+            if currentPosition.x >= correctPosition.x-100 &&
+                currentPosition.x <= correctPosition.x+100 &&
+                currentPosition.y >= correctPosition.y-100 &&
+                currentPosition.y <= correctPosition.y+100 {
+                
                 deleteView(view: fileView, status: true)
                 showHa(view: HaBenar)
                 jawabanBenar.play()
-            } else if fileView.frame.intersects(bekasSalah.frame){
+//                print ("whoop whoop")
+            } else if currentPosition.x >= incorrectPosition.x-100 &&
+                        currentPosition.x <= incorrectPosition.x+100 &&
+                        currentPosition.y >= incorrectPosition.y-100 &&
+                        currentPosition.y <= incorrectPosition.y+100 {
                 deleteView(view: fileView, status: true)
                 showHa1(view: HaBenar1, status: true)
+//               print ("boooo")
             } else {
                 returnViewToOrigin(view: fileView)
             }
@@ -81,22 +99,54 @@ class TebakAksara: UIViewController {
         default:
             break
         }
+            
+//            if fileView.frame.intersects(bekasBenar.frame) {
+//                deleteView(view: fileView, status: true)
+//                showHa(view: HaBenar)
+//                jawabanBenar.play()
+//            } else if fileView.frame.intersects(bekasSalah.frame){
+//                deleteView(view: fileView, status: true)
+//                showHa1(view: HaBenar1, status: true)
+//            } else {
+//                returnViewToOrigin(view: fileView)
+//            }
+//
+//        default:
+//            break
+//        }
     }
     
     @objc func handleSecondPan(gesture: UIPanGestureRecognizer) {
+        let point = gesture.location(in: view)
+        let currentPosition = point
+       
+//        print(currentPosition)
+        
         let newView = gesture.view!
         switch gesture.state {
         case .began, .changed:
           
             moveViewWithPan2(view: newView, gesture: gesture)
         case .ended:
-            if newView.frame.intersects(bekasAtas.frame) {
-                returnViewToOrigin(view: newView)
-            } else if newView.frame.intersects(bekasBenar.frame) {
-                returnViewToRight(view: newView)
-                jawabanBenar.play()
-            }
             
+            if currentPosition.x >= correctPosition.x-100 &&
+                currentPosition.x <= correctPosition.x+100 &&
+                currentPosition.y >= correctPosition.y-100 &&
+                currentPosition.y <= correctPosition.y+100 {
+                
+                deleteView(view: newView, status: true)
+                showHa(view: HaBenar)
+                jawabanBenar.play()
+//                print ("whoop whoop")
+            } else if currentPosition.x >= incorrectPosition.x-100 &&
+                        currentPosition.x <= incorrectPosition.x+100 &&
+                        currentPosition.y >= incorrectPosition.y-100 &&
+                        currentPosition.y <= incorrectPosition.y+100 {
+                returnViewToRight(view: newView)
+//               print ("boooo")
+            } else {
+                returnViewToOrigin(view: newView)
+            }
         default:
             break
         }
@@ -122,7 +172,7 @@ class TebakAksara: UIViewController {
     
     func returnViewToRight(view:UIView) {
         UIView.animate(withDuration: 0.3, animations: {
-            view.frame.origin = self.HaBenarOrigin
+            view.frame.origin = self.HaBenar1Origin
         })
     }
     
@@ -132,12 +182,6 @@ class TebakAksara: UIViewController {
         })
     }
     
-//    func undeleteView(view: UIView, status: Bool) {
-//        UIView.animate(withDuration: 0.3, animations: {
-//            view.alpha = 1
-//        })
-//    }
-//
     func showHa(view: UIView) {
         UIView.animate(withDuration: 0.3, animations: {
             self.HaBenar.alpha = 1
